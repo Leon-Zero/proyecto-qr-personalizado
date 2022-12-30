@@ -1,0 +1,15 @@
+<form>
+    <fieldset>
+      <legend><h2>Escoja un marco para el QR</h2></legend>
+      <div class="row">
+        <div class="wrap-qr-body" >
+            <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.wraping">
+                <input [(ngModel)]="wraping" type="radio" [name]=" 'wraping__' + wrap.name "
+                [value]="wrap.name" (change)="sendWraping(wraping)" >
+                <img [src]=" './assets/' + wrap.name + '.png' " alt="wrap preview">
+            </div>
+        </div>
+    </div>
+    </fieldset>
+ </form>
+  

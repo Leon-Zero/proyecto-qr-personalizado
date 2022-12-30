@@ -1,0 +1,19 @@
+<div class="wrapping">    
+    <form>
+        <div class="container">
+            <label for="width">Tamaño QR ({{width + 'px X ' + width + 'px'}})</label>
+            <input id="width" class="input-range" type="range" name="width" min="150" max="400" step="25"
+            [(ngModel)]="width" (input)="sendWidth(width)" valueAsNumber>
+        </div>
+        <div class="container">
+            <label for="size-icon">Tamaño Icono</label>
+            <input id="size-icon" class="input-range" type="range" name="size-icon" min="5" max="10" step="1"
+            [(ngModel)]="sizeIcon" (input)="sendSizeIcon(sizeIcon)" valueAsNumber>
+        </div>
+        <div class="container">
+            <label for="size-wrap">Tamaño Marco</label>
+            <input id="size-wrap" class="input-range" type="range" name="size-wrap" min="60" max="100" step="10"
+            [(ngModel)]="sizeWrap" (input)="sendSizeWrap(sizeWrap)" valueAsNumber>
+        </div>
+    </form>
+</div>

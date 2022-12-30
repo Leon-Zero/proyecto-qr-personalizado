@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {  
+    --QRsizing: 198px;
+    --primary-bg-color: #333740;
+    --primary-color: #2c62f6;
+    --text-color: #b1b8ca;
+    --text-active: #ffffff;
+    --button-hover-bg-color: #2b2e34;
+    --border-color: #494d59;
+    --transition-time: 0.4s;
+    --transition-timing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --border-radius: 1.4rem;
+    --list-button-height: 4.6rem;
+    --translate-value-plataform: 0;
+    --floating-icon-size-plataform: 26;
+    --floating-icon-top-plataform: 0;
+    --floating-icon-left-plataform: 0;
+    --rotate-arrow-plataform: 0;
+    --dropdown-height-plataform: 0;
+    --list-opacity-plataform: 0;
+    --translate-value-social: 0;   
+    --floating-icon-size-social: 26;
+    --floating-icon-top-social: 0;
+    --floating-icon-left-social: 0;
+    --rotate-arrow-social: 0;
+    --dropdown-height-social: 0;
+    --list-opacity-social: 0;
+    --translate-value-devs: 0;   
+    --floating-icon-size-devs: 26;
+    --floating-icon-top-devs: 0;
+    --floating-icon-left-devs: 0;
+    --rotate-arrow-devs: 0;
+    --dropdown-height-devs: 0;
+    --list-opacity-devs: 0;
+    --translate-value-finance: 0;   
+    --floating-icon-size-finance: 26;
+    --floating-icon-top-finance: 0;
+    --floating-icon-left-finance: 0;
+    --rotate-arrow-finance: 0;
+    --dropdown-height-finance: 0;
+    --list-opacity-finance: 0;
+    
+  }
+html {
+    font-size: 62.5%;
+  }
+  
+html, body {
+height: 100%;
+}
+  
+body {
+padding: 1.5rem;
+line-height: 1.4;
+}
+button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  svg {
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  .text-truncate {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .dropdown-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 34rem;
+  }
+  
+  .dropdown-title-icon,
+  .dropdown-arrow {
+    display: inline-flex;
+  }
+  
+  .dropdown-title {
+    margin: 0 auto 0 1.8rem;
+    text-transform: capitalize;
+  }
+  
+  .dropdown-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1.8rem;
+  }
+  
+  .dropdown-button svg {
+    transition: all var(--transition-time) var(--transition-timing);
+    fill: var(--text-color);
+    width: 30px;
+    height: 30px;
+  }
+  
+  .dropdown-button svg,
+  .dropdown-button span {
+    pointer-events: none;
+  }
+  
+  .dropdown-button:hover,
+  .dropdown-button:focus {
+    color: var(--text-active);
+  }
+  
+  .dropdown-button:hover svg,
+  .dropdown-button:focus svg {
+    fill: var(--text-active);
+  }
+  
+  .main-button {
+    height: 5.8rem;
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    background-color: var(--primary-bg-color);
+    border: 0.1rem solid var(--border-color);
+    transition: all var(--transition-time) var(--transition-timing);
+  }
+  
+  .main-button:focus {
+    border: 0.1rem solid var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(44, 98, 246, 0.4);
+  }
+  
+  .main-button .dropdown-arrow {
+    transition: transform var(--transition-time) var(--transition-timing);
+    transform: rotate(var(--rotate-arrow));
+    margin-left: 1.8rem;
+  }
+  
+  .list-button {
+    height: var(--list-button-height);
+    transition: color var(--transition-time) var(--transition-timing);
+    color: var(--text-color);
+    overflow: hidden;
+    cursor: none;
+  }
+  
+  .dropdown-list-wrapper {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-bg-color);
+    border-radius: var(--border-radius);
+    border: 0.1rem solid var(--border-color);
+    position: relative;
+  }
+  
+  ul.dropdown-list {
+    position: relative;
+    list-style-type: none;
+  }
+  
+  ul.dropdown-list:hover::before,
+  ul.dropdown-list:hover ~ .floating-icon {
+    opacity: 1;
+  }
+  
+  .floating-icon svg {
+    fill: var(--text-active);
+    width: 40px;
+    height: 40px;
+  }
+  .qr-image{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    }

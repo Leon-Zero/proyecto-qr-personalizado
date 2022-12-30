@@ -1,0 +1,83 @@
+div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    height: 550px;
+    padding: 1px;
+    margin: 0;
+}
+
+img{
+    display: flex;
+    position: relative;
+    object-fit: fill;
+    width: 60%;
+    height: 60%;
+}
+.not_selection{
+    display: none;
+}
+.neon{
+    top: 1px;
+    width: 420px;
+    height: 420px;
+}
+.solar{
+    z-index: -1;
+    width: 410px;
+    height: 410px;
+    top: -2px;
+}
+.monitor{
+    width: 410px;
+    height: 370px;
+    top: -10px;
+    left: .05px;
+}
+.movil{
+    width: 420px;
+    height: 400px;
+    z-index: -1;
+    top: 1px;
+}
+.rabbit{
+    z-index: -1;
+    top:-2px;
+    left: 1px;
+}
+.laser{
+    width: 420px;
+    height: 420px;
+}
+.china{
+    width: 410px;
+    height: 410px;
+}
+.rustico{
+    width: 410px;
+    height: 410px;
+}
+.road{
+    width: 385px;
+    height: 400px;
+    top: -10px;
+}
+.vintage{
+    display: flex;
+    top: -4px;
+    left: -2px;
+    width: 410x;
+    height: 410px;
+    z-index: -1;
+}
+.scan{
+    width: 420px;
+    height: 410px;
+    left: 1px;
+}
+.colors{
+    width: 420px;
+    height: 420px;
+}
