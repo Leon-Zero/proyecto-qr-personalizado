@@ -15,7 +15,10 @@ span{
     background-color: #25D366;
     color: #f8f8f3;
     border-radius: 50%;
-    padding-bottom: .2em;
+    height: 1.3em;
+    width: 1.3em;
+    padding-bottom: .25em;
+    padding-left: .25em;
 }
 .twitter{
     color: #1DA1F2;
@@ -32,6 +35,7 @@ span{
     border-radius: 50%;
     height: 1.2em;
     width: 1.2em;
+    padding-top: .4em;
 }
 .linkedin{
     color: #0e76a8;
@@ -43,25 +47,71 @@ span{
 .youtube{
     color: #FF0000;
     background-color: #f8f4f4;
+    width: .7em;
+    height: .6em;
 }
 .discord{
     color: #f8f4f4;
     background-color: #5865F2;
     border-radius: 50%;
+    height: 1.4em;
+    width: 1.4em;
 }
 .tiktok{
     color: #f8f4f4;
     background-color: #111111;
     border-radius: 50%;
+    height: 1.2em;
+    width: 1.2em;
 }
 .steam{
     color: #f8f4f4;
     background:linear-gradient(120deg, #00adee, #000000);;
     border-radius: 25%;
-    padding-right: 7px;
+    padding-right: .34em;
 }
 .github{
-    color: #000000 ;
-    background-color: #f8f4f4 ;
+    color: #000000;
+    background-color: #f8f4f4;
     border-radius: 50%;
+    width: .95em;
+    height: .95em;
+}
+.pdf{
+    color: #f8f4f4;
+    background-color: #FF0000;
+    width: .9em;
+    height: 1.2em;
+    border-radius: 25%;
+}
+.wifi{
+    color:#0ab1ee;
+}
+.download{
+    color: #d5ebe0;
+    background-color: #25D366;
+    width: .9em;
+    height: 1.2em;
+    border-radius: 25%;
+}
+.code{
+    color: #cf4007;
+    background-color: #111111;
+    border-radius: 50%;
+    height: 1.4em;
+    width: 1.4em;
+}
+.paypal{
+    color: #d5dceb;
+    background-color: #0079C1;
+    border-radius: 50%;
+    height: 1.2em;
+    width: 1.2em;
+}
+.credit{
+    color:#111111;
+    background-color: #ffaa0b;
+    width: 1.1em;
+    height: .8em;
+    border-radius: 10%;
 }

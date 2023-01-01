@@ -32,7 +32,7 @@ section{
 }
 
 .accordion-panel {
-    padding: 5px 25px;
+    padding: 5px 4em;
     margin-bottom: 10px;
     border: 1px solid #777e91;
     border-radius: 50px;
