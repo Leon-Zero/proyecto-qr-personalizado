@@ -78,10 +78,10 @@ button {
   }
   
   .dropdown-container {
-    margin-top: 1rem;
+    margin: 1rem 0; 
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 25rem;
     max-width: 34rem;
   }
   
@@ -91,24 +91,24 @@ button {
   }
   
   .dropdown-title {
-    margin: 0 auto 0 1.8rem;
+    margin: 0 1rem;
     text-transform: capitalize;
   }
   
   .dropdown-button {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 1.65rem;
     display: flex;
     align-items: center;
-    padding: 0 1.8rem;
+    padding: 0 1rem 0 2rem;
   }
   
   .dropdown-button svg {
     transition: all var(--transition-time) var(--transition-timing);
     fill: var(--text-color);
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
   
   .dropdown-button svg,
@@ -127,7 +127,7 @@ button {
   }
   
   .main-button {
-    height: 5.8rem;
+    height: 4rem;
     border-radius: var(--border-radius);
     color: var(--text-color);
     background-color: var(--primary-bg-color);
@@ -143,7 +143,7 @@ button {
   .main-button .dropdown-arrow {
     transition: transform var(--transition-time) var(--transition-timing);
     transform: rotate(var(--rotate-arrow));
-    margin-left: 1.8rem;
+    margin-left: auto;
   }
   
   .list-button {

@@ -1,26 +1,15 @@
 section{
     display: flex;
-    padding: 10px;
     width: max-content;
     height: max-content;
 }
 fieldset{
     margin: 10px 20px;
-    padding: 10px 5px;
+    padding: 10px;
 }
-.wrap-qr-body{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    gap: 20px;
-}
-.wrap-qr-content{
-    position: relative;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    margin: 0 auto;
+form{
+    width: 100%;
+    height: 100%;
 }
 input{
     position: absolute;
@@ -29,6 +18,20 @@ input{
     transform: scale(1.5);
 }
 img{
-    width: 90pxpx;
-    height: 90px;
+    object-fit: fill;
 }
+.wrap-qr-body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+.wrap-qr-content{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    margin: 0 auto;
+}
+

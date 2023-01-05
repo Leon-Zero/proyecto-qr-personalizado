@@ -110,8 +110,23 @@ span{
 }
 .credit{
     color:#111111;
-    background-color: #ffaa0b;
+    background-color: #6bf8a1;
     width: 1.1em;
     height: .8em;
     border-radius: 10%;
+}
+.bitcoin{
+    color: #f2a900;
+    background-color: #f8f4f4;
+    border-radius: 50%;
+    width: .9em;
+    height: .9em;
+}
+.lemon{
+    color:#052335;
+    background-color: #9dff3a;
+    width: 1.4em;
+    height: 1.4em;
+    border: .1em solid #052335;
+    border-radius: 50%;
 }

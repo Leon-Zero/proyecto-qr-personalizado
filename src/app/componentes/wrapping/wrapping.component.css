@@ -47,6 +47,7 @@ img{
 }
 .scan{
     z-index: 1000;
+    left: .2em;
 }
 .colors{
     z-index: 1000;

@@ -10,19 +10,18 @@ section{
     align-items: flex-start;
     justify-content: flex-start;
     flex-flow: row wrap;
-    width: 650px;
     gap: 20px;
 }
 .accordion{
     position: absolute;
-    min-width: 600px;
+    min-width: 50vw;
     top: 0;
     left: 0;
 }
 .container {
     max-width: 600px;
     margin-inline: auto;
-    padding: 20px 15px;
+    padding: 10px 5px;
 }
 
 .title {
@@ -34,9 +33,9 @@ section{
 .accordion-panel {
     padding: 5px 4em;
     margin-bottom: 10px;
-    border: 1px solid #777e91;
+    border: 3px solid #777e91;
     border-radius: 50px;
-    background-color: var(--text-color);
+    background-color: #d1ecf5c4;
 }
 
 .accordion input {
