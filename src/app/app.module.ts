@@ -14,12 +14,14 @@ import { SocialComponent } from './drop-down-menu/social/social.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PlataformComponent } from './drop-down-menu/plataform/plataform.component';
 import { QrDataFormComponent } from './forms/qr-data-form/qr-data-form.component';
-import { AcordionComponent } from './drop-down-menu/acordion/acordion.component';
+import { AcordionComponent } from './componentes/acordion/acordion.component';
 import { QrColorFormComponent } from './forms/qr-color-form/qr-color-form.component';
 import { QrWrapingFormComponent } from './forms/qr-wraping-form/qr-wraping-form.component';
 import { DevsComponent } from './drop-down-menu/devs/devs.component';
 import { FinanceComponent } from './drop-down-menu/finance/finance.component';
 import { QrSizingFormComponent } from './forms/qr-sizing-form/qr-sizing-form.component';
+import { QrCorrectionLevelFormComponent } from './forms/qr-correction-level-form/qr-correction-level-form.component';
+import { QrTypeFormComponent } from './forms/qr-type-form/qr-type-form.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { QrSizingFormComponent } from './forms/qr-sizing-form/qr-sizing-form.com
     DevsComponent,
     FinanceComponent,
     QrSizingFormComponent,
+    QrCorrectionLevelFormComponent,
+    QrTypeFormComponent,
   ],
   imports: [
     BrowserModule,

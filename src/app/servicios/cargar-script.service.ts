@@ -10,11 +10,9 @@ export class CargarScriptService {
   carga(archivos:string[]){
     for( let archivo of archivos){
       let script = document.createElement("script");
-      script.src = "./assets/" + archivos + ".js";
+      script.src = "./assets/jscript_dropmenu/" + archivos + ".js";
       let body = document.getElementsByTagName("body")[0];
       body.appendChild( script );
     }
-  }
-  delete(){
   }
 }

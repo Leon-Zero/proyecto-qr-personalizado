@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { NgxQrcodeErrorCorrectionLevels } from '@techiediaries/ngx-qrcode/lib/qrcode.types';
 import { Subject } from 'rxjs';
 
 @Injectable({
@@ -11,10 +12,10 @@ export class QrValuesService {
   widthValue: number= 0;
   sizeIconValue: number= 0;
   sizeWrapValue: number= 0;
-
   darkValue: string= "";
   lightValue: string= "";
   wrapingValue: string= "";
+  correctionLValue!: NgxQrcodeErrorCorrectionLevels;
 
   private sendValueIcon = new Subject<string>();
   private sendValueUrl = new Subject<string>();
@@ -24,6 +25,8 @@ export class QrValuesService {
   private sendValueDark = new Subject<string>();
   private sendValueLight = new Subject<string>();
   private sendValueWraping = new Subject<string>();
+  private sendValueCorrectionL = new Subject<any>();
+
 
 
   observableIcon = this.sendValueIcon.asObservable();
@@ -34,6 +37,8 @@ export class QrValuesService {
   observableDark = this.sendValueDark.asObservable();
   observableLight = this.sendValueLight.asObservable();
   observableWraping = this.sendValueWraping.asObservable();
+  observableCorrectionL = this.sendValueCorrectionL.asObservable();
+
 
   
   constructor() { }
@@ -69,5 +74,9 @@ export class QrValuesService {
   sendWraping(wraping: string){
     this.wrapingValue = wraping;
     this.sendValueWraping.next(wraping);
+  }
+  sendCorrectionL(correction: NgxQrcodeErrorCorrectionLevels){
+    this.correctionLValue = correction;
+    this.sendValueCorrectionL.next(correction);
   }
 }

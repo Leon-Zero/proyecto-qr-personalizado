@@ -2,12 +2,12 @@
     <form>
         <div class="container">
             <label for="width">Tamaño QR ({{width + 'px X ' + width + 'px'}})</label>
-            <input id="width" class="input-range" type="range" name="width" min="150" max="400" step="25"
+            <input id="width" class="input-range" type="range" name="width" min="150" max="400" step="10"
             [(ngModel)]="width" (input)="sendWidth(width)" valueAsNumber>
         </div>
         <div class="container">
             <label for="size-icon">Tamaño Icono</label>
-            <input id="size-icon" class="input-range" type="range" name="size-icon" min="5" max="14" step="1"
+            <input id="size-icon" class="input-range" type="range" name="size-icon" min="4" max="14" step="1"
             [(ngModel)]="sizeIcon" (input)="sendSizeIcon(sizeIcon)" valueAsNumber>
         </div>
         <div class="container">

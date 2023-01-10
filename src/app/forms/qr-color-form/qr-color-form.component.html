@@ -1,17 +1,17 @@
 <div class="wraping">
     <form>
         <div class="container-node">
-            <div class="container">
+            <div id="wrap-dark" class="container">
                 <input id="dark" class="input-color"  type="color" name="dark"
                 [style]="'box-shadow: -40px 40px 15px' + dark + '; border: 12px double' + dark"
                 [(ngModel)]="dark" (input)="sendDark(dark)" >
-                <label for="dark">Elige un color <br> oscuro </label>
+                <label style="color: #0a0a0a;" for="dark">Elige un color <br> oscuro </label>
             </div>
-            <div class="container">
+            <div id="wrap-light" class="container">
                 <input id="light" class="input-color" value="#ffffff" type="color" name="light"
                 [style]="'box-shadow: 40px -40px 15px' + light + '; border: 10px double' + light"
                 [(ngModel)]="light" (input)="sendLight(light)" >
-                <label for="light">Elige un color <br> claro </label>
+                <label style="color: #f7f7f2;" for="light">Elige un color <br> claro </label>
             </div>
         </div>
     </form>

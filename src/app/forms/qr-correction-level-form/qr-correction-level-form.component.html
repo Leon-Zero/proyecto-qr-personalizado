@@ -1,0 +1,30 @@
+<form>
+    <fieldset>
+      <legend>Nivel de corrección de error </legend>
+      <div class="row">
+        <div class="cl-qr-body" >
+            <div class="correction-qr" >
+                <label for="level_H">HIGH</label>
+                <input [(ngModel)]="CorrectionLevel" id="level_H" type="radio" name="level_high" 
+                [value]="H" (change)="sendCorrectionL(CorrectionLevel)" checked>
+            </div>
+            <div class="correction-qr" >
+                <label for="level_Q">QUARTILE</label>
+                <input [(ngModel)]="CorrectionLevel" id="level_Q" type="radio" name="level_quartile" 
+                [value]="Q" (change)="sendCorrectionL(CorrectionLevel)" >
+            </div>
+            <div class="correction-qr" >
+                <label for="level_M">MEDIUM</label>
+                <input [(ngModel)]="CorrectionLevel" id="level_M" type="radio" name="level_medium" 
+                [value]="M" (change)="sendCorrectionL(CorrectionLevel)" >
+            </div>
+            <div class="correction-qr" >
+                <label for="level_L">LOW</label>
+                <input [(ngModel)]="CorrectionLevel" id="level_L" type="radio" name="level_low" 
+                [value]="L" (change)="sendCorrectionL(CorrectionLevel)" >
+            </div>
+            
+        </div>
+    </div>
+    </fieldset>
+ </form>

@@ -7,11 +7,11 @@
 }
 :root {  
     --QRsizing: 198px;
-    --primary-bg-color: #333740;
-    --primary-color: #2c62f6;
-    --text-color: #b1b8ca;
-    --text-active: #ffffff;
-    --button-hover-bg-color: #2b2e34;
+    --primary-bg-color: #b8bcd5;
+    --primary-color: #2a3780;
+    --text-color: #ffffff;
+    --text-active: #1f3ac7;
+    --button-hover-bg-color: #122172;
     --border-color: #494d59;
     --transition-time: 0.4s;
     --transition-timing: cubic-bezier(0.25, 0.46, 0.45, 0.94);

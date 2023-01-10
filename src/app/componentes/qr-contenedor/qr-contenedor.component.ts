@@ -13,12 +13,13 @@ export class QrContenedorComponent implements OnInit {
   constructor( public qrService: QrValuesService) { }
   elementType = NgxQrcodeElementTypes.URL;
   url=''
-  errorCorrectionLevel= NgxQrcodeErrorCorrectionLevels.HIGH
   margin = 0;
   width= 200;
   dark="";
   light="";
   class="qr-image";
+  errorCorrectionLevel= NgxQrcodeErrorCorrectionLevels.HIGH;
+
 
   ngOnInit(): void {
     this.qrService.observableUrl.subscribe(response =>{
@@ -32,6 +33,9 @@ export class QrContenedorComponent implements OnInit {
   });
   this.qrService.observableLight.subscribe(response => {
     this.light = response;
+  });
+  this.qrService.observableCorrectionL.subscribe(response => {
+    this.errorCorrectionLevel= response;
   });
   }
   convertToIMG(){

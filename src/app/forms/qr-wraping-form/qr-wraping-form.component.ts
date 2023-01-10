@@ -7,12 +7,12 @@ import { QrValuesService } from 'src/app/servicios/qr-values.service';
   styleUrls: ['./qr-wraping-form.component.css']
 })
 export class QrWrapingFormComponent implements OnInit {
-  wraping = "";
+  wraping = "not_selection";
   wrapingClass = {
     "wraping": [
       { "name": "not_selection" }, { "name": "party" }, { "name": "neon" }, { "name": "movil" }, { "name": "rabbit" }, { "name": "laser" },
       { "name": "china" }, { "name": "rustico" }, { "name": "road" }, { "name": "scan" }, 
-      { "name": "colors" }, { "name": "estambre" }
+      { "name": "colors" }, { "name": "estambre" }, { "name": "bear" }
     ]
   }
 

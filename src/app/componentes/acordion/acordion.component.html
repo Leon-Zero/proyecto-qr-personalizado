@@ -4,11 +4,14 @@
         <article class="accordion-panel">
             <input id="accordion-question" name="accordion" type="radio" checked />
             <label for="accordion-question">
-                TEXTO
-                <i class="fa-solid fa-angles-down open"></i>
+                <a class="hvr-icon-spin" >
+                 <span id="quote-left" class="fa-solid fa-quote-left hvr-icon"></span> TEXTO <span id="quote-right" class="fa-solid fa-quote-right hvr-icon"></span>
+                </a>
+                    <i class="fa-solid fa-angles-down open"></i>
                 <i class="fa-solid fa-xmark close"></i>
             </label>
             <div class="accordion-body">
+                <app-qr-type-form></app-qr-type-form>
                 <app-qr-data-form></app-qr-data-form>
             </div>
         </article>
@@ -16,7 +19,21 @@
         <article class="accordion-panel">
             <input id="accordion-question-2" name="accordion" type="radio" />
             <label for="accordion-question-2">
-               COLORES
+               <a class="contenedor" >
+                    COLORES
+                    <ul>
+                        <li>
+                            <span><i id="brush" class="fa-solid fa-brush"></i></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span id="hover_target" ></span>
+                        </li>
+                    </ul>
+                </a>
                 <i class="fa-solid fa-angles-down open"></i>
                 <i class="fa-solid fa-xmark close"></i>
             </label>
@@ -28,7 +45,10 @@
         <article class="accordion-panel">
             <input id="accordion-question-3" name="accordion" type="radio" />
             <label for="accordion-question-3">
-                ICONOS
+                <a class="contenedor hvr-icon-forward" >
+                <span>ICONOS</span> 
+                    <span id="icons" class="fa-solid fa-icons hvr-icon"></span>
+                </a>
                 <i class="fa-solid fa-angles-down open"></i>
                 <i class="fa-solid fa-xmark close"></i>
             </label>
@@ -63,6 +83,17 @@
             </label>
             <div class="accordion-body">
                 <app-qr-sizing-form></app-qr-sizing-form>
+            </div>
+        </article>
+        <article class="accordion-panel">
+            <input id="accordion-question-6" name="accordion" type="radio" />
+            <label for="accordion-question-6">
+                OPCIONES
+                <i class="fa-solid fa-angles-down open"></i>
+                <i class="fa-solid fa-xmark close"></i>
+            </label>
+            <div class="accordion-body">
+                <app-qr-correction-level-form></app-qr-correction-level-form>
             </div>
         </article>
     </div>

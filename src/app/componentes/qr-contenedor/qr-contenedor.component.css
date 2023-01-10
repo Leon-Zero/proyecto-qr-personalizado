@@ -7,8 +7,8 @@
     align-items: center;
 }
 #contentQR{
-    width: 550px;
-    height: 550px;
+    width: 45em;
+    height: 45em;
     border: 2px solid rgb(27, 26, 26);
     position: relative;
     background-color: rgba(255, 255, 255, 0);
