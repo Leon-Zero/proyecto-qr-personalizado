@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QrValuesService } from 'src/app/servicios/qr-values.service';
 
 @Component({
   selector: 'app-qr-type-form',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QrTypeFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(public qrService: QrValuesService) { }
+
+  type: string = "url"
 
   ngOnInit(): void {
+  }
+
+  sendType(type: string) {
+    this.qrService.sendType(type);
   }
 
 }

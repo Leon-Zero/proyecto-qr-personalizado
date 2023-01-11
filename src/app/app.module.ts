@@ -22,6 +22,7 @@ import { FinanceComponent } from './drop-down-menu/finance/finance.component';
 import { QrSizingFormComponent } from './forms/qr-sizing-form/qr-sizing-form.component';
 import { QrCorrectionLevelFormComponent } from './forms/qr-correction-level-form/qr-correction-level-form.component';
 import { QrTypeFormComponent } from './forms/qr-type-form/qr-type-form.component';
+import { QrDataTextoFormComponent } from './forms/qr-data-form/qr-data-texto-form/qr-data-texto-form.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { QrTypeFormComponent } from './forms/qr-type-form/qr-type-form.component
     QrSizingFormComponent,
     QrCorrectionLevelFormComponent,
     QrTypeFormComponent,
+    QrDataTextoFormComponent,
   ],
   imports: [
     BrowserModule,

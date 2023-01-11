@@ -1,14 +1,19 @@
 <div class="nav-body">
     <nav>
-        <input type="radio" name="nav-item" id="url" checked>
+        <input [(ngModel)]="type" type="radio" name="nav-item" id="url" value="url"
+        (change)="sendType(type)" checked >
             <label for="url"> <span class="fa-solid fa-globe"></span> url </label>
-        <input type="radio" name="nav-item" id="texto">
+        <input [(ngModel)]="type" type="radio" name="nav-item" id="texto" value="texto"
+        (change)="sendType(type)" >
             <label for="texto"> <span class="fa-solid fa-pencil"></span> texto </label>
-        <input type="radio" name="nav-item" id="v-card">
+        <input [(ngModel)]="type" type="radio" name="nav-item" id="v-card" value="v-card"
+        (change)="sendType(type)" >
             <label for="v-card"> <span class="fa-regular fa-id-card"></span> v-card </label>
-        <input type="radio" name="nav-item" id="wifi">
+        <input [(ngModel)]="type" type="radio" name="nav-item" id="wifi" value="wifi"
+        (change)="sendType(type)" >
             <label for="wifi"> <span class="fa-solid fa-wifi"></span> wifi </label>
-        <input type="radio" name="nav-item" id="otro">
-            <label for="otro"> <span class="fa-solid fa-location-dot"></span> mapa </label>
+        <input [(ngModel)]="type" type="radio" name="nav-item" id="mapa" value="mapa"
+        (change)="sendType(type)" >
+            <label for="mapa"> <span class="fa-solid fa-location-dot"></span> mapa </label>
     </nav>
 </div>

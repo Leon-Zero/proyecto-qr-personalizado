@@ -11,7 +11,7 @@ export class WrappingComponent implements OnInit {
   wrapingValues: string= "not_selection";
   sizeWrapValues: number=60;
 
-  constructor(private qrService: QrValuesService) { }
+  constructor(private qrService: QrValuesService) { } 
 
   ngOnInit(): void { 
     this.qrService.observableWraping.subscribe(response =>{

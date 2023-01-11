@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels } from '@techiediaries/ngx-qrcode';
+import { NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels} from '@techiediaries/ngx-qrcode';
 import html2canvas from 'html2canvas';
 import { QrValuesService } from 'src/app/servicios/qr-values.service';
 

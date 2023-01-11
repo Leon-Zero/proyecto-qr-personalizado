@@ -1,0 +1,10 @@
+<div class="wraping">
+    <form >
+        <div class="container">
+            <label for="input-texto">Texto</label>
+            <textarea id="input-texto" type="text" name="url" [(ngModel)]="texto"
+             (input)="sendUrl(texto)" cols="30" rows="10" maxlength="500" >
+            </textarea>
+        </div>
+    </form>
+</div>

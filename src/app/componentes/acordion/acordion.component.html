@@ -12,7 +12,8 @@
             </label>
             <div class="accordion-body">
                 <app-qr-type-form></app-qr-type-form>
-                <app-qr-data-form></app-qr-data-form>
+                <app-qr-data-form *ngIf=" type === 'url' "></app-qr-data-form>
+                <app-qr-data-texto-form *ngIf=" type === 'texto' " ></app-qr-data-texto-form>
             </div>
         </article>
 
