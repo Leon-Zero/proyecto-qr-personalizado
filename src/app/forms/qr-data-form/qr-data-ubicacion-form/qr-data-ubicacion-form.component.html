@@ -1,0 +1,22 @@
+<div class="wraping">
+    <form (ngSubmit)="sendUbication()" >
+        <div class="container">
+            <label for="input-latitud">Latitud</label>
+            <input class="input-mapa" id="input-latitud" type="number" name="latitud" 
+            [(ngModel)]="latitud" (input)="latitudValue(latitud)">
+        </div>
+        <div class="container">
+            <label for="input-longitud">Longitud</label>
+            <input class="input-mapa" id="input-longitud" type="number" name="longitud"
+             [(ngModel)]="longitud" (input)="longitudValue(longitud)">
+        </div>
+        <div class="container">
+            <label>Obtener coordenadas de una ubicación 
+                <a href="https://www.coordenadas-gps.com/" target="_blank" >click aqui</a> 
+            </label>
+        </div>
+
+        <button type="submit" class="btn">Generar QR</button>
+
+    </form>
+</div>

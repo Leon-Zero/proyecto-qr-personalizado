@@ -24,6 +24,7 @@ import { QrCorrectionLevelFormComponent } from './forms/qr-correction-level-form
 import { QrTypeFormComponent } from './forms/qr-type-form/qr-type-form.component';
 import { QrDataTextoFormComponent } from './forms/qr-data-form/qr-data-texto-form/qr-data-texto-form.component';
 import { QrDataWifiFormComponent } from './forms/qr-data-form/qr-data-wifi-form/qr-data-wifi-form.component';
+import { QrDataUbicacionFormComponent } from './forms/qr-data-form/qr-data-ubicacion-form/qr-data-ubicacion-form.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { QrDataWifiFormComponent } from './forms/qr-data-form/qr-data-wifi-form/
     QrTypeFormComponent,
     QrDataTextoFormComponent,
     QrDataWifiFormComponent,
+    QrDataUbicacionFormComponent,
   ],
   imports: [
     BrowserModule,
