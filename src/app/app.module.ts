@@ -23,6 +23,7 @@ import { QrSizingFormComponent } from './forms/qr-sizing-form/qr-sizing-form.com
 import { QrCorrectionLevelFormComponent } from './forms/qr-correction-level-form/qr-correction-level-form.component';
 import { QrTypeFormComponent } from './forms/qr-type-form/qr-type-form.component';
 import { QrDataTextoFormComponent } from './forms/qr-data-form/qr-data-texto-form/qr-data-texto-form.component';
+import { QrDataWifiFormComponent } from './forms/qr-data-form/qr-data-wifi-form/qr-data-wifi-form.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { QrDataTextoFormComponent } from './forms/qr-data-form/qr-data-texto-for
     QrCorrectionLevelFormComponent,
     QrTypeFormComponent,
     QrDataTextoFormComponent,
+    QrDataWifiFormComponent,
   ],
   imports: [
     BrowserModule,

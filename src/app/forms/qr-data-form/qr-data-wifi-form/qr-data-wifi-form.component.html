@@ -1,0 +1,43 @@
+<div class="wraping">
+    <form (ngSubmit)="sendWifi()">
+        <div class="container">
+            <label for="input-ssid">SSID/ Nombre de red</label>
+            <input class="input-wifi" id="input-ssid" type="text" name="ssid" 
+            [(ngModel)]="ssid" (input)="ssidValue(ssid)" required>
+        </div>
+
+        <div class="container">
+            <label for="encryption">Cifrado</label>
+            <div class="input-group">
+                <select [(ngModel)]="typeEncryption" name="encryption" id="encryption" class="input-wifi"
+                (change)="typeEncryptionValue(typeEncryption)"  required>
+                    <option value="WPA">WPA/WPA2/WPA3</option>
+                    <option value="WEP">WEP</option>
+                    <option value="nopass">None</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container">
+            <label for="password"><span class="fa-solid fa-key"></span> Contraseña</label>
+            <div class="input-group">
+                <input class="input-wifi" [type]="passVisible? 'text' : 'password' " id="password" name="password"
+                [(ngModel)]="password" (input)="passwordValue(password)" required>
+                <span><button type="button" id="pass-hidden" (click)="changeVisibility()" >
+                    <i [class]="passVisible? 'fa-regular fa-eye-slash' : 'fa-regular fa-eye' "></i>
+                </button></span>
+           </div>
+        </div>
+
+        <div class="container">
+            <div class="input-group">
+            <label for="hidden">¿Tu nombre de red está oculta?</label>
+                <input value="H:true" type="checkbox" name="hidden" id="hidden"
+                [(ngModel)]="hiddenBoolean" (change)="hiddenValue(hiddenBoolean)" >
+            </div>
+        </div>
+
+        <button type="submit" class="btn">Generar QR</button>
+
+    </form>
+</div>

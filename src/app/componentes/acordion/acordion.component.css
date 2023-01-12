@@ -241,7 +241,6 @@ app-qr-color-form, app-qr-sizing-form, app-social, app-plataform, app-devs, app-
   }
  /* Icon Forward */
 .hvr-icon-forward {
-    outline: #008000 solid 2px;
     display: flex;
     vertical-align: middle;
     width: 50vw;
