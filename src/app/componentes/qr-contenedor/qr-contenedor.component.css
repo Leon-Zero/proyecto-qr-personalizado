@@ -33,35 +33,52 @@ app-wrapping{
     position: absolute;
     display: flex;
 }
-.btn {
-    background: #b30d3c;
-    background-image: -webkit-linear-gradient(top, #b30d3c, #d90416);
-    background-image: -moz-linear-gradient(top, #b30d3c, #d90416);
-    background-image: -ms-linear-gradient(top, #b30d3c, #d90416);
-    background-image: -o-linear-gradient(top, #b30d3c, #d90416);
-    background-image: linear-gradient(to bottom, #b30d3c, #d90416);
-    -webkit-border-radius: 58;
-    -moz-border-radius: 58;
-    border-radius: 58px;
-    text-shadow: 0px 2px 5px #a81616;
-    -webkit-box-shadow: 0px 5px 10px #ff0040;
-    -moz-box-shadow: 0px 5px 10px #ff0040;
-    box-shadow: 0px 5px 10px #ff0040;
-    font-family: Georgia;
-    color: #080202;
-    font-size: 25px;
-    padding: 10px 25px 10px 25px;
-    border: solid #820830 1px;
+  .btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
     text-decoration: none;
-    cursor: pointer;
-  }
-  .btn:hover {
-    background: #f022e9;
-    background-image: -webkit-linear-gradient(top, #f022e9, #cc52af);
-    background-image: -moz-linear-gradient(top, #f022e9, #cc52af);
-    background-image: -ms-linear-gradient(top, #f022e9, #cc52af);
-    background-image: -o-linear-gradient(top, #f022e9, #cc52af);
-    background-image: linear-gradient(to bottom, #f022e9, #cc52af);
-    text-decoration: none;
-  }
-  
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-shadow: 1px 1px 2ox #5894ee;
+    color: #000000;
+    background-color: #74a6f1b0;
+    margin: 1em;
+   }
+   
+   .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .btn::after {
+    background-color: #74a6f1b0;
+   }
+   
+   .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }

@@ -1,0 +1,153 @@
+<div class="wraping">
+    <form (ngSubmit)="sendVCard()" >
+
+        <div class="container">
+            <div class="input-group">
+                <div class="col">
+                    <label for="v-nombre">Nombre</label>
+                    <input type="text" name="v-nombre" id="v-nombre" class="input-vcard"
+                    [(ngModel)]="nombre" (change)="nombreValue(nombre)" required>
+                </div>
+                <div class="col">
+                    <label for="v-apellido">Apeliido</label>
+                    <input type="text" name="v-apellido" id="v-apellido" class="input-vcard"
+                    [(ngModel)]="apellido" (change)="apellidoValue(apellido)" >
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="input-group">
+                <div class="col">
+                    <label for="v-tel-casa">Teléfono casa</label>
+                    <input type="tel" name="v-tel-casa" id="v-tel-casa" class="input-vcard"
+                    [(ngModel)]="telCasa" (change)="telCasaValue(telCasa)"
+                    placeholder="+54 351 1234567" >
+                </div>
+                <div class="col">
+                    <label for="v-cel">Teléfono celular</label>
+                    <input type="tel" name="v-cel" id="v-cel" class="input-vcard"
+                    [(ngModel)]="celular" (change)="celularValue(celular)" 
+                    placeholder="+54 351 1234567" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="input-group">
+                <div class="col" >
+                    <label for="v-direccion">Dirección</label>
+                    <input  type="text" name="v-direccion" id="v-direccion"  class="input-vcard"
+                    [(ngModel)]="direccion" (input)="direccionValue(direccion)" 
+                    placeholder="calle 1234" >
+                </div>
+                <div class="col" >
+                    <label for="v-extend">Depto/Piso</label>
+                    <input  type="text" name="v-extend" id="v-extend"  class="input-vcard"
+                    [(ngModel)]="extendDir" (input)="extendDirValue(extendDir)" 
+                    placeholder="depto 2 pb." >
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="input-group">
+                <div class="col">
+                    <label for="v-pais">País</label>
+                    <input type="text" name="v-pais" id="v-pais" class="input-vcard"
+                    [(ngModel)]="pais" (change)="paisValue(pais)" >
+                </div>
+                <div class="col">
+                    <label for="v-provincia">Provincia</label>
+                    <input type="text" name="v-provincia" id="v-provincia" class="input-vcard"
+                    [(ngModel)]="provincia" (change)="provinciaValue(provincia)" >
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="input-group">
+                <div class="col">
+                    <label for="v-ciudad">Ciudad</label>
+                    <input type="text" name="v-ciudad" id="v-ciudad" class="input-vcard"
+                    [(ngModel)]="ciudad" (change)="ciudadValue(ciudad)" >
+                </div>
+                <div class="col">
+                    <label for="v-cp">C.P.:</label>
+                    <input type="number" name="v-cp" id="v-cp" class="input-vcard"
+                    [(ngModel)]="cp" (change)="cpValue(cp)" >
+                </div>    
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="input-group">
+                <div class="col">
+                    <label for="v-empresa">Empresa / Trabajo</label>
+                    <input type="text" name="v-empresa" id="v-empresa" class="input-vcard"
+                    [(ngModel)]="empresa" (change)="empresaValue(empresa)" >
+                </div>
+                <div class="col">
+                    <label for="v-titulo">Titulo Profesional</label>
+                    <input type="text" name="v-titulo" id="v-titulo" class="input-vcard"
+                    [(ngModel)]="titulo" (change)="tituloValue(titulo)" >
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="input-group">
+                <div class="col">
+                    <label for="v-tel-trabajo">Teléfono trabajo</label>
+                    <input type="tel" name="v-tel-trabajo" id="v-tel-trabajo" class="input-vcard"
+                    [(ngModel)]="telTrabajo" (change)="telTrabajoValue(telTrabajo)" 
+                    placeholder="+54 351 1234567" >
+                </div>
+                <div class="col">
+                    <label for="v-fax">Fax trabajo</label>
+                    <input type="tel" name="v-fax" id="v-fax" class="input-vcard"
+                    [(ngModel)]="fax" (change)="faxValue(fax)" placeholder="+54 351 1234567" >
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="input-group">
+                <div class="col" id="col__v-notas">
+                    <label for="v-notas">Notas</label>
+                    <textarea  type="text" name="v-notas" id="v-notas" class="input-vcard" 
+                    [(ngModel)]="notas" (input)="notasValue(notas)" rows="5" maxlength="250" >
+                    </textarea>
+                </div>
+                <div class="col">
+                    <label for="v-nacimiento">Fecha de nacimiento</label>
+                    <input type="date" name="v-nacimiento" id="v-nacimiento" class="input-vcard"
+                    [(ngModel)]="nacimiento" (change)="nacimientoValue(nacimiento)" 
+                    min="1950-01-01" max="2040-12-1" value="2023-01-01">   
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            
+        </div>
+
+        <div class="container">
+            <div class="input-group">
+                <div class="col">
+                    <label for="v-email">Email</label>
+                    <input type="email" name="v-email" id="v-email" class="input-vcard"
+                    [(ngModel)]="email" (change)="emailValue(email)" placeholder="ejemplo@email.com" >
+                </div>
+                <div class="col">
+                    <label for="v-url">Sitio web</label>
+                    <input type="text" name="v-url" id="v-url" class="input-vcard"
+                    [(ngModel)]="url" (change)="urlValue(url)" placeholder="https:" >
+                </div>
+            </div>
+        </div>
+        
+        <button type="submit" class="btn">Generar QR</button>
+
+    </form>
+</div>

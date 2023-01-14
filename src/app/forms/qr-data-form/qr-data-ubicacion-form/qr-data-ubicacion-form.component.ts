@@ -10,8 +10,8 @@ export class QrDataUbicacionFormComponent implements OnInit {
 
   constructor(public qrService: QrValuesService) { }
 
-  latitud: number = 0;
-  longitud: number = 0;
+  latitud!: number;
+  longitud!: number;
   ubication: string = "";
 
 

@@ -3,12 +3,12 @@
         <div class="container">
             <label for="input-latitud">Latitud</label>
             <input class="input-mapa" id="input-latitud" type="number" name="latitud" 
-            [(ngModel)]="latitud" (input)="latitudValue(latitud)">
+            [(ngModel)]="latitud" (input)="latitudValue(latitud)" placeholder="1234/-1234">
         </div>
         <div class="container">
             <label for="input-longitud">Longitud</label>
             <input class="input-mapa" id="input-longitud" type="number" name="longitud"
-             [(ngModel)]="longitud" (input)="longitudValue(longitud)">
+             [(ngModel)]="longitud" (input)="longitudValue(longitud)" placeholder="-1234/1234">
         </div>
         <div class="container">
             <label>Obtener coordenadas de una ubicación 

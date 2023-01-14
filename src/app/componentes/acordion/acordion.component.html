@@ -1,7 +1,7 @@
 <section class="container">
     <div class="accordion">
         <h2 class="title">Personaliza tu codigo QR</h2>
-        <article class="accordion-panel">
+        <article class="accordion-panel hvr-shutter-out-horizontal">
             <input id="accordion-question" name="accordion" type="radio" checked />
             <label for="accordion-question">
                 <a class="hvr-icon-spin" >
@@ -14,16 +14,17 @@
                 <app-qr-type-form></app-qr-type-form>
                 <app-qr-data-form *ngIf=" type === 'url' "></app-qr-data-form>
                 <app-qr-data-texto-form *ngIf=" type === 'texto' " ></app-qr-data-texto-form>
+                <app-qr-data-vcard-form *ngIf="type === 'v-card' " ></app-qr-data-vcard-form>
                 <app-qr-data-wifi-form *ngIf=" type === 'wifi' "></app-qr-data-wifi-form>
                 <app-qr-data-ubicacion-form *ngIf="type === 'mapa' " ></app-qr-data-ubicacion-form>
             </div>
         </article>
 
-        <article class="accordion-panel">
+        <article class="accordion-panel hvr-shutter-out-horizontal">
             <input id="accordion-question-2" name="accordion" type="radio" />
             <label for="accordion-question-2">
+            <span class="span-icon">COLORES</span>
                <a class="contenedor" >
-                    COLORES
                     <ul>
                         <li>
                             <span><i id="brush" class="fa-solid fa-brush"></i></span>
@@ -45,11 +46,11 @@
             </div>
         </article>
 
-        <article class="accordion-panel">
+        <article class="accordion-panel hvr-shutter-out-horizontal">
             <input id="accordion-question-3" name="accordion" type="radio" />
             <label for="accordion-question-3">
                 <a class="contenedor hvr-icon-forward" >
-                <span>ICONOS</span> 
+                <span class="span-icon">ICONOS</span> 
                     <span id="icons" class="fa-solid fa-icons hvr-icon"></span>
                 </a>
                 <i class="fa-solid fa-angles-down open"></i>
@@ -65,10 +66,13 @@
             </div>
         </article>
 
-        <article class="accordion-panel">
+        <article class="accordion-panel hvr-shutter-out-horizontal">
             <input id="accordion-question-4" name="accordion" type="radio" />
             <label for="accordion-question-4">
-                MARCOS
+                <a class="contenedor hvr-icon-forward" >
+                    <span class="span-icon">MARCOS</span> 
+                    <span id="wrap-icon" class="fa-solid fa-expand hvr-icon"></span>
+                </a>
                 <i class="fa-solid fa-angles-down open"></i>
                 <i class="fa-solid fa-xmark close"></i>
             </label>
@@ -77,10 +81,13 @@
             </div>
         </article>
 
-        <article class="accordion-panel">
+        <article class="accordion-panel hvr-shutter-out-horizontal">
             <input id="accordion-question-5" name="accordion" type="radio" />
             <label for="accordion-question-5">
-                TAMAÑOS
+                <a class="contenedor hvr-icon-forward" >
+                    <span class="span-icon">TAMAÑOS</span> 
+                    <span id="size-icon" class="fa-solid fa-sliders hvr-icon"></span>
+                </a>
                 <i class="fa-solid fa-angles-down open"></i>
                 <i class="fa-solid fa-xmark close"></i>
             </label>
@@ -88,10 +95,13 @@
                 <app-qr-sizing-form></app-qr-sizing-form>
             </div>
         </article>
-        <article class="accordion-panel">
+        <article class="accordion-panel hvr-shutter-out-horizontal">
             <input id="accordion-question-6" name="accordion" type="radio" />
             <label for="accordion-question-6">
-                OPCIONES
+                <a class="contenedor hvr-icon-forward" >
+                    <span class="span-icon">OPCIONES</span> 
+                    <span id="option-icon" class="fa-solid fa-gears hvr-icon"></span>
+                </a>
                 <i class="fa-solid fa-angles-down open"></i>
                 <i class="fa-solid fa-xmark close"></i>
             </label>

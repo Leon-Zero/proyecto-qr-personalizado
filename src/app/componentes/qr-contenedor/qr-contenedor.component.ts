@@ -19,6 +19,7 @@ export class QrContenedorComponent implements OnInit {
   light="";
   class="qr-image";
   errorCorrectionLevel= NgxQrcodeErrorCorrectionLevels.HIGH;
+  scale=50;
 
 
   ngOnInit(): void {
@@ -40,7 +41,7 @@ export class QrContenedorComponent implements OnInit {
   }
   convertToIMG(){
     let element= document.getElementById('capture') as HTMLElement;
-    html2canvas(element, {backgroundColor:"null", scale:3}).then(canvas => {
+    html2canvas(element, {backgroundColor:"null", scale:2.5}).then(canvas => {
       let enlace = document.createElement('a');
       enlace.download = "CodigoQR-Leonardo Web.png";
       // Convertir la imagen a Base64
