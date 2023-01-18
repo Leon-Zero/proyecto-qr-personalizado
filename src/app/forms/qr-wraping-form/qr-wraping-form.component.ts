@@ -11,8 +11,8 @@ export class QrWrapingFormComponent implements OnInit {
   wrapingClass = {
     "wraping": [
       { "name": "not_selection" }, { "name": "party" }, { "name": "neon" }, { "name": "movil" }, { "name": "rabbit" }, { "name": "laser" },
-      { "name": "china" }, { "name": "rustico" }, { "name": "road" }, { "name": "scan" }, 
-      { "name": "colors" }, { "name": "estambre" }, { "name": "bear" }
+      { "name": "china" }, { "name": "rustico" }, {"name":"video"}, { "name": "road" }, { "name": "scan" },
+      { "name": "colors" }, { "name": "estambre" }, { "name": "bear" }, { "name": "black-ig" }
     ]
   }
 

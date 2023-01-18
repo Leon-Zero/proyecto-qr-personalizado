@@ -1,5 +1,4 @@
 /* Acordion estilos generales */
-
 section{
     height: auto;
     position: relative;
@@ -16,6 +15,10 @@ section{
 }
 .accordion{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
     min-width: 650px;
     top: 0;
     left: 0;
@@ -27,7 +30,8 @@ section{
 }
 
 .title {
-    font-size: clamp(26px, 5vw, 40px);
+    display: flex;
+    font-size: 3rem;
     color: var(--primary-color);
 }
 
@@ -289,7 +293,7 @@ width: 7em;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #a9dce6a8;
+    background: #c1e6ecda;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 50%;

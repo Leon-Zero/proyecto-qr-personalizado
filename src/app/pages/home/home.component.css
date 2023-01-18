@@ -1,6 +1,10 @@
 app-qr-contenedor{
 position: fixed;
-top: 3em;
-right: 0;
+top: 6em;
+right: 3em;
 }
 
+.node{
+    padding: 0 2em;
+    position: relative;
+}

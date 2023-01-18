@@ -11,7 +11,7 @@ form{
   display: inline-block;
 }
 #input-url{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 500px;
   font-size: 14px;
   padding: .2em;
@@ -22,8 +22,8 @@ form{
   font-weight: 600;
   border: 3px solid #9f9fea;
   }
-  #input-url:hover{
-    background-color: #969edaa3;
+  #input-url:focus{
+    background-color: #fdfdff;
     border: 3px #3131bc solid;
   }
   

@@ -3,7 +3,8 @@
         <div class="container">
             <label for="input-texto">Texto</label>
             <textarea id="input-texto" type="text" name="url" [(ngModel)]="texto"
-             (input)="sendUrl(texto)" cols="30" rows="10" maxlength="500" >
+             (input)="sendUrl(texto)" cols="30" rows="10" maxlength="1000" 
+             placeholder="¡Escribe o pega tu texto aquí!" >
             </textarea>
         </div>
     </form>

@@ -19,8 +19,7 @@ export class QrContenedorComponent implements OnInit {
   light="";
   class="qr-image";
   errorCorrectionLevel= NgxQrcodeErrorCorrectionLevels.HIGH;
-  scale=50;
-
+  scale=2000;
 
   ngOnInit(): void {
     this.qrService.observableUrl.subscribe(response =>{

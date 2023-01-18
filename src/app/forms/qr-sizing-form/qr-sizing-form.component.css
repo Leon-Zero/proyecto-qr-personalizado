@@ -23,7 +23,7 @@ label{
       .input-range[type='range'] {
         display: flex;
         overflow: hidden;
-        width: 25em;
+        width: 30em;
         height: 1em;
         transform: scale(1.5);
         appearance: none;
@@ -53,14 +53,8 @@ label{
         border-radius: 50px 50px 50px 50px;
         height: 1em;
         }
-          #width[type='range']::-webkit-slider-thumb {
+        .input-range[type='range']::-webkit-slider-thumb {
             width: 3em;
-          }
-          #size-icon[type='range']::-webkit-slider-thumb {
-            width: 4.5em;
-          }
-          #size-wrap[type='range']::-webkit-slider-thumb {
-            width: 5.5em;
           }
 
   }

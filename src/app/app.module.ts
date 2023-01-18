@@ -26,6 +26,10 @@ import { QrDataTextoFormComponent } from './forms/qr-data-form/qr-data-texto-for
 import { QrDataWifiFormComponent } from './forms/qr-data-form/qr-data-wifi-form/qr-data-wifi-form.component';
 import { QrDataUbicacionFormComponent } from './forms/qr-data-form/qr-data-ubicacion-form/qr-data-ubicacion-form.component';
 import { QrDataVcardFormComponent } from './forms/qr-data-form/qr-data-vcard-form/qr-data-vcard-form.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { AcercaDeComponent } from './pages/acerca-de/acerca-de.component';
+import { ConsejosComponent } from './pages/consejos/consejos.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +53,10 @@ import { QrDataVcardFormComponent } from './forms/qr-data-form/qr-data-vcard-for
     QrDataWifiFormComponent,
     QrDataUbicacionFormComponent,
     QrDataVcardFormComponent,
+    NavbarComponent,
+    AcercaDeComponent,
+    ConsejosComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,

@@ -58,3 +58,11 @@ img{
 .bear{
     z-index: -1;
 }
+.black-ig{
+    z-index: -1;
+    left: .2em;
+    top:1em;
+}
+.video{
+    z-index: -1;
+}

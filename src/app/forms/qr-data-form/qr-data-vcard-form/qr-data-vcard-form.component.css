@@ -24,8 +24,8 @@ font-weight: 600;
 border: 3px solid #9f9fea;
 padding: .2em;
 }
-.input-vcard:hover{
-background-color: #969edaa3;
+.input-vcard:focus{
+background-color: #fdfdff;
 border: 3px #3131bc solid;
 }
 
