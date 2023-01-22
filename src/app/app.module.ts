@@ -30,6 +30,9 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { AcercaDeComponent } from './pages/acerca-de/acerca-de.component';
 import { ConsejosComponent } from './pages/consejos/consejos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { ListExampleComponent } from './pages/consejos/componentes/list-example/list-example.component';
+import { AcordionExampleComponent } from './pages/consejos/componentes/acordion-example/acordion-example.component';
+import { MenuTypeExampleComponent } from './pages/consejos/componentes/menu-type-example/menu-type-example.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +60,9 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     AcercaDeComponent,
     ConsejosComponent,
     ContactoComponent,
+    ListExampleComponent,
+    AcordionExampleComponent,
+    MenuTypeExampleComponent,
   ],
   imports: [
     BrowserModule,

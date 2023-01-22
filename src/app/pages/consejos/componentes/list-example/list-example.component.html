@@ -1,0 +1,134 @@
+<div id="flex-consejo">
+    <ul>
+        <li (click)="onParent(1)">
+            <span class="list-style fa-solid fa-qrcode"></span>
+            <h5>ojos tapados</h5>
+        </li>
+        <li (click)="onParent(2)">
+            <span class="list-style fa-solid fa-qrcode"></span>
+            <h5>colores sin constraste</h5>
+        </li>
+        <li (click)="onParent(3)">
+            <span class="list-style fa-solid fa-qrcode"></span>
+            <h5>QR muy cubierto</h5>
+        </li>
+        <li (click)="onParent(4)">
+            <span class="list-style fa-solid fa-qrcode"></span>
+            <h5>nivel de corrección de errores insuficiente</h5>
+        </li>
+        <li (click)="onParent(5)">
+            <span class="list-style fa-solid fa-qrcode"></span>
+            <h5>datos mal introducidos</h5>
+        </li>
+        <li (click)="onParent(6)">
+            <span class="list-style fa-solid fa-qrcode"></span>
+            <h5>formato incorrecto</h5>
+        </li>
+    </ul>
+    <div class="content">
+        <div class="parent" *ngIf="viewParent === 1">
+            <div class="incorrect">
+                <img src="./assets/imagenes/incorrect-eyes.png" alt="">
+            </div>
+            <div class="correct">
+                <img src="./assets/imagenes/correct-eyes.png" alt="">
+            </div>
+            <div class="explanation">
+                <p> Los marcadores de un QR u "ojos" son 3 cuadrados o figuras más grandes y distintivas que se ubican
+                    en las esquinas del código QR, su funcionalidad es indicar la posición de un QR al escáner; dicho de
+                    otra forma el escáner reconoce que se trata de un QR al identificar estos marcadores. Si se
+                    encuentran muy tapados o irreconocibles, algunos escáneres no podrán leer el código QR.</p>
+            </div>
+        </div>
+
+        <div class="parent" *ngIf="viewParent === 2">
+            <div class="incorrect">
+                <img src="./assets/imagenes/incorrect-color.png" alt="">
+            </div>
+            <div class="correct">
+                <img src="./assets/imagenes/correct-color.png" alt="">
+            </div>
+            <div class="explanation">
+                <p> La imagen de un QR consta de zonas oscuras y zonas claras, el código tradicional utiliza colores
+                    negro y blanco por defecto. Al cambiar la gama de colores utilizados se debe corresponder a la misma
+                    premisa, los colores oscuros ser tonos más oscuros que los claros, además, tener suficiente
+                    contraste entre ellos. Un contrasté insuficiente dificultará o hará imposible la lectura del código
+                    QR. </p>
+            </div>
+        </div>
+
+        <div class="parent" *ngIf="viewParent === 3">
+            <div class="incorrect">
+                <img src="./assets/imagenes/incorrect-cubierto.png" alt="">
+            </div>
+            <div class="correct">
+                <img src="./assets/imagenes/correct-cubierto.png" alt="">
+            </div>
+            <div class="explanation">
+                <p>La aplicación permite personalizar de muchas formas el código QR, no obstante hay que tener en cuenta
+                    que existe un límite finito de que tanto puede taparse el QR en cuestión. Hay opciones que
+                    posibilitan ajustar el tamaño de los elementos y mejorar la lectura ante corrección de errores, de
+                    tal forma que se rija una armonía entre las modificaciones sin que estropee la lectura del código
+                    QR.</p>
+            </div>
+        </div>
+
+        <div class="parent" *ngIf="viewParent === 4">
+            <div class="incorrect">
+                <img src="./assets/imagenes/incorrect-levelcorrection.png" alt="">
+            </div>
+            <div class="correct">
+                <img src="./assets/imagenes/correct-levelcorrection.png" alt="">
+            </div>
+            <div class="explanation">
+                <p>La simbología QR admite cuatro niveles de corrección de errores, siendo L el menos minucioso y H, el
+                    más exhaustivo. Estos niveles se definen en términos del porcentaje de palabras de acceso en el
+                    código de barras que se pueden corregir en caso de que se haya dañado o sean ilegibles. En el
+                    ejemplo de arriba se observa 2 códigos con el mismo texto extenso introducido para ambos y los
+                    mismos elementos de igual tamaño y color, pero con nivel L (low) y nivel H (high) respectivamente,
+                    posibilitando que solo el código con nivel H pueda ser leído por un escáner.</p>
+            </div>
+        </div>
+
+        <div class="parent" *ngIf="viewParent === 5">
+            <div class="incorrect">
+                <img src="./assets/imagenes/incorrect-campos.png" alt="">
+            </div>
+            <div class="correct">
+                <img src="./assets/imagenes/correct-campos.png" alt="">
+            </div>
+            <div class="explanation">
+                <p> Existen errores simples, que si bien no impiden la lectura del código QR, si perjudican a las
+                    funciones que estaba destinado el texto del código. Un link mal introducido resultará en un link que
+                    no dirige a ninguna parte. Un campo 'nombre' que fue confundido con otro dato dará a que el nombre
+                    esté en el lugar incorrecto al leerse para un wifi o una vcard. Otros elementos de texto que pueden
+                    no ser leídos de forma correcta son los emoticones y código ascii poco comunes o especiales, por lo
+                    que es mejor evitarlos a la hora de confeccionar un texto o incluso si estos forman parte de una red
+                    wifi o su contraseña. Esto se debe a que dichos caracteres son interpretados de forma distinta
+                    dependiendo el escáner o el dispositivo y la aplicación que recibe el texto especial.</p>
+            </div>
+        </div>
+
+        <div class="parent" *ngIf="viewParent === 6">
+            <div class="incorrect">
+                <img src="./assets/imagenes/incorrect-format.png" alt="">
+            </div>
+            <div class="correct">
+                <img src="./assets/imagenes/correct format.png" alt="">
+            </div>
+            <div class="explanation">
+                <p> Siguiendo la línea del ítem anterior, otra forma de colocar mal el texto de un campo es
+                    equivocándose en el formato que se esperaba. Esto es importante para aquellos QR que al ser leídos
+                    pueden cumplir una funcionalidad en otras aplicaciones. Lo cual será el caso de url, wifi, vcard y
+                    mapa. Se debe considerar de forma estricta que requieren datos específicos o en un formato
+                    particular. En los ejemplos puede verse que una latitud es agregada con coma (,) cuando estas solo
+                    aceptan el punto (.) lo que viene a ser su forma estándar de escribir latitud y longitud. Para el
+                    ejemplo de wifi debe colocarse de forma exacta (minúsculas, mayúsculas y símbolos) el nombre de red,
+                    y la contraseña estar correctamente ingresada. Si un dato es distinto a la configuración del wifi al
+                    cual se refiere, entonces no podrá ingresar con el QR dado que introducirá ese nombre de red o
+                    contraseña inexistentes para la red wifi que se pretendía ingresar.</p>
+            </div>
+        </div>
+
+    </div>
+</div>

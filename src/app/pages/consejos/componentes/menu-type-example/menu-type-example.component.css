@@ -1,0 +1,38 @@
+.node-article{
+    display: flex;
+    width: 100%;
+    outline: red solid 3px;
+    justify-content: center;
+    align-items: center;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-flow: column nowrap;
+    padding: 3em;
+}
+.view{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: .3em 3em;
+}
+h3{
+    font-size: 18px;
+    font-family:"Roboto", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #494d59;
+    text-shadow: 0 2px 6px #122072e0;
+    letter-spacing: .1em;
+    text-align: center;
+}
+article .view .consejo p{
+    font-size: 15px;
+    font-family:"Roboto", sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}

@@ -8,14 +8,8 @@ import { QrValuesService } from 'src/app/servicios/qr-values.service';
 })
 export class ConsejosComponent implements OnInit {
 
-  constructor(private qrService: QrValuesService) { }
+  constructor() { }
 
-  type:string = 'url';
-
-  ngOnInit(): void {
-    this.qrService.observableType.subscribe(response =>{
-      this.type = response;
-    });
-  }
+  ngOnInit(): void {  }
 
 }
