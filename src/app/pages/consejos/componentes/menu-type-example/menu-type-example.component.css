@@ -1,7 +1,6 @@
 .node-article{
     display: flex;
     width: 100%;
-    outline: red solid 3px;
     justify-content: center;
     align-items: center;
 }

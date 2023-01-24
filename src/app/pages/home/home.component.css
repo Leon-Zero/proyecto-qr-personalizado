@@ -7,4 +7,7 @@ right: 4em;
 .node{
     padding: 0 2em;
     position: relative;
+    width: 100%;
+    min-height: 650px;
+    max-height: 1500px;
 }

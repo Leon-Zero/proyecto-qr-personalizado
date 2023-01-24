@@ -33,6 +33,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { ListExampleComponent } from './pages/consejos/componentes/list-example/list-example.component';
 import { AcordionExampleComponent } from './pages/consejos/componentes/acordion-example/acordion-example.component';
 import { MenuTypeExampleComponent } from './pages/consejos/componentes/menu-type-example/menu-type-example.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { MenuTypeExampleComponent } from './pages/consejos/componentes/menu-type
     ListExampleComponent,
     AcordionExampleComponent,
     MenuTypeExampleComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

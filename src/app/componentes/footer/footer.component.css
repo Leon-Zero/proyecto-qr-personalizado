@@ -1,0 +1,188 @@
+footer{
+    width: 100vw;
+    margin-top: 3em;
+    padding: 1.5em 3em;
+    background: hsla(199, 29%, 60%, 0.95);
+    box-shadow: inset 0 5px 8px var(--primary-color);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    margin-bottom: 1em;
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+        place-self: center start;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row nowrap;
+        gap: 1em;
+    }
+    .div2 { 
+        grid-area: 1 / 2 / 2 / 3;
+        place-self: center;
+    }
+    .div3 { 
+        grid-area: 1 / 3 / 2 / 4;
+        place-self: end;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1.5em;
+        padding-right: 2em;
+    }
+
+.flex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    padding-left: 1.5em;
+}
+.flex-box p{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+    padding: 0 1.5em 0 1em;
+}
+footer .parent .div1 span{
+    font-size: 7em;
+    display: flex;
+    align-self: center;
+    background-color: #495285;
+    color: rgb(15, 15, 15);
+    padding: .2em .25em;
+    border-radius: .3em;
+    border: rgb(255, 255, 255) 5px solid;
+}
+footer .parent .div1 h4{
+    font-size: 3em;
+    font-family:"Roboto", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #b8bcd5;
+    text-shadow: 0 6px 15px #122072e0;
+    letter-spacing: .3em;
+}
+
+footer .parent .div2 button span{
+    transform: rotate(-45deg);
+    color: #f7f3f3;
+}
+button {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #495285;
+    color: #FFF;
+    border-radius: 50px;
+    border: 2px solid #070d30d0;
+    filter: drop-shadow(0 5px 15px rgba(2, 4, 32, 0.904));
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    transition: 0.5s;
+    padding-top: .5em;
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
+  button:active {
+    background-color: #020cd1;
+  }
+
+footer .parent .div3 a span{
+    font-size: 4em;
+    color: #212121;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+}
+footer .parent .div3 a:hover span{
+    color: #e8e8e8;
+    transform: scale(1.2);
+}
+
+/* Icon Wobble Vertical */
+@-webkit-keyframes hvr-icon-wobble-vertical {
+    16.65% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes hvr-icon-wobble-vertical {
+    16.65% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  .hvr-icon-wobble-vertical {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-icon-wobble-vertical .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .hvr-icon-wobble-vertical:hover .hvr-icon, .hvr-icon-wobble-vertical:focus .hvr-icon, .hvr-icon-wobble-vertical:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-wobble-vertical;
+    animation-name: hvr-icon-wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
