@@ -1,20 +1,26 @@
 <div class="wraping">
-<div id="contentQR" >
-    <div id="capture">
-      <app-wrapping></app-wrapping>
-      <ngx-qrcode 
-        [attr.elementType]="elementType" 
-        [value]="url"
-        [cssClass]="class"
-        [errorCorrectionLevel]="errorCorrectionLevel"
-        [colorDark]="dark"
-        [colorLight]="light"
-        [margin]="margin"
-        [width]="width">
-        [scale]="scale"
-      </ngx-qrcode>
-      <app-icon></app-icon>
-    </div>
-</div> 
-<button class="btn" (click)="convertToIMG()">Descargar</button>
+    <div id="contentQR" >
+        <div id="capture">
+          <div class="parent">
+              <div class="div1"> 
+                  <ngx-qrcode 
+                    [attr.elementType]="elementType" 
+                    [value]="url"
+                    [cssClass]="class"
+                    [errorCorrectionLevel]="errorCorrectionLevel"
+                    [colorDark]="dark"
+                    [colorLight]="light"
+                    [margin]="margin"
+                    [width]="width">
+                    [scale]="scale"
+                  </ngx-qrcode>
+              </div>
+              <div class="div2">
+                <app-wrapping></app-wrapping>
+              </div>
+          </div>
+          <app-icon></app-icon>
+        </div>
+    </div> 
+    <button class="btn" (click)="convertToIMG()">Descargar</button>
 </div>

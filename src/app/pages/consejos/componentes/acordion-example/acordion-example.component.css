@@ -15,7 +15,7 @@
     margin-bottom: 10px;
     border: 2px solid #2c494f;
     border-radius: 50px;
-    background-color: rgba(235, 246, 250, 0.7);
+    background-color: #fcfcfc;
 }
 
 .accordion input {
@@ -66,16 +66,16 @@
     flex-direction: column;
     gap: 5px;
 }
-
-.accordion-answer {
-    font-size: 14px;
-    color: #043030;
-    padding-top: 5px;
-    padding-bottom: 7px;
-    opacity: 0;
-    transform: scale(0);
-    transform-origin: top left;
-    transition: ease-out 0.75s;
+.accordion-body p{
+    font-size: 18px;
+    font-family:"Roboto", sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+.accordion-body ul li{
+    font-size: 18px;
+    font-family:"Roboto", sans-serif;
+    color: rgb(0, 0, 5);
 }
 
 .accordion input:checked ~ .accordion-body {
@@ -124,7 +124,7 @@
 }
 .hvr-icon{
     color: var(--button-hover-bg-color);
-    font-size: 24px;
+    font-size: 28px;
 }
 .hvr-icon-spin {
     display: flex;

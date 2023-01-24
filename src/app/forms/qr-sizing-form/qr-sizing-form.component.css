@@ -23,7 +23,7 @@ label{
       .input-range[type='range'] {
         display: flex;
         overflow: hidden;
-        width: 30em;
+        width: 28em;
         height: 1em;
         transform: scale(1.5);
         appearance: none;

@@ -22,6 +22,9 @@ export class QrWrapingFormComponent implements OnInit {
   }
 
   sendWraping(wraping: string) {
+    if(wraping === "not_selection"){
+    this.qrService.sendSizeWrap(20);
+    }
     this.qrService.sendWraping(wraping);
   }
 

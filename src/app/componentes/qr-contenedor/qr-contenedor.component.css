@@ -13,25 +13,26 @@
     position: relative;
     background-color: rgba(255, 255, 255, 0);
     margin: 0;
-}
-#capture{
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    flex-flow: row nowrap;
 }
-ngx-qrcode{
-    display: flex;
-}
-app-wrapping{
+#capture{
     position: absolute;
-    display: flex;
+    outline: 6px dashed rgb(91, 240, 91);
 }
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    place-items: center;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 1 / 2 / 2; }
+
   .btn {
     position: relative;
     font-size: 17px;

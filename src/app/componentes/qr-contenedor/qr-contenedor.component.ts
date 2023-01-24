@@ -13,8 +13,8 @@ export class QrContenedorComponent implements OnInit {
   constructor( public qrService: QrValuesService) { }
   elementType = NgxQrcodeElementTypes.URL;
   url=''
-  margin = 0;
-  width= 200;
+  margin = .5;
+  width= 150;
   dark="";
   light="";
   class="qr-image";
@@ -40,7 +40,7 @@ export class QrContenedorComponent implements OnInit {
   }
   convertToIMG(){
     let element= document.getElementById('capture') as HTMLElement;
-    html2canvas(element, {backgroundColor:"null", scale:2.5}).then(canvas => {
+    html2canvas(element, {backgroundColor:"null", scale:2}).then(canvas => {
       let enlace = document.createElement('a');
       enlace.download = "CodigoQR-Leonardo Web.png";
       // Convertir la imagen a Base64

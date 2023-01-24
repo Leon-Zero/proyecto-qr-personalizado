@@ -1,60 +1,84 @@
 <div class="wrap">
 
     <app-qr-type-form></app-qr-type-form>
-    
+
     <article class="node-article" *ngIf="type === 'url' ">
         <div class="view">
             <div id="consejo-url" class="consejo">
-                <h3>Acá va el consejo sobre url</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti, at similique dignissimos
-                    nulla temporibus earum soluta illo voluptates non modi adipisci beatae, alias animi veniam natus
-                    voluptatem, deleniti in.</p>
+                <h3>QR para compartir una dirección URL</h3>
+                <p>Esta opción de texto plano permite introducir en el campo una dirección de url, prácticamente todos
+                    los escáneres de código pueden leer una dirección web impresa en el QR y permitir que sea abierta
+                    con un navegador predeterminado. No hay restricciones respecto al campo url, cualquier sitio puede
+                    ser compartido e incluso una url que direccionan a imágenes o videos alojadas en servidores o webs,
+                    como así también enlaces de descarga. Siendo el formato de QR más común para compartir.</p>
             </div>
         </div>
     </article>
     <article class="node-article" *ngIf="type === 'texto' ">
         <div class="view">
             <div id="consejo-texto" class="consejo">
-                <h3>Acá va el consejo sobre texto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus totam quisquam. Vel
-                    quas doloribus ut id quis recusandae aliquid, exercitationem illum sequi, saepe atque dolor veniam
-                    eum est aspernatur.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti, at similique dignissimos
-                    nulla temporibus earum soluta illo voluptates non modi adipisci beatae, alias animi veniam natus
-                    voluptatem, deleniti in.</p>
+                <h3>Comparte redactados e información más extensa</h3>
+                <p>La opción de texto permite redactar libremente textos de 1000 caracteres. Ideal para compartir
+                    información escrita de forma dinámica y soportado por todos los escáneres. Consideraciones a tener
+                    en cuenta: a medida que más extenso sea un texto, mayor será la densidad del código en la imagen del
+                    QR, por lo que tamaños pequeños pueden resultar inconvenientes para este tipo. Además, siendo el
+                    campo de mayor capacidad de caracteres, si es que se personaliza con iconos o marcos que lo tapen
+                    levemente, lo ideal es darle un nivel de corrección de error mayor para garantizar su lectura.</p>
             </div>
         </div>
     </article>
     <article class="node-article" *ngIf="type === 'v-card' ">
         <div class="view">
             <div id="consejo-vcard" class="consejo">
-                <h3>Acá va el consejo sobre vcard</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste voluptatum reprehenderit
-                    facere. Blanditiis placeat assumenda nobis esse fugit quod perspiciatis mollitia sapiente molestias!
-                    Facere laborum possimus natus saepe repellat. Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Atque corrupti, at similique dignissimos
-                    nulla temporibus earum soluta illo voluptates non modi adipisci beatae, alias animi veniam natus
-                    voluptatem, deleniti in.</p>
+                <h3>Genera una V-Card con un codigo QR</h3>
+                <p>V-Card es un formato estándar para el intercambio de información personal, específicamente tarjetas
+                    personales electrónicas o lo que es lo mismo "información de contacto", un escáner QR moderno
+                    permite leer una V-Card e introducir dichos datos de contacto en sus campos respectivos de la agenda
+                    de contactos de un celular solo haciendo un clic en la opción de 'Agendar Contacto' que dispone el
+                    lector de QR cuando identifica la V-Card. Este formato permite muchos campos de texto tales como
+                    nombre, trabajo, notas, teléfonos, sitio web, fecha de nacimiento y dirección de domicilio. Siendo
+                    solo obligatorio y necesario para poder generar la V-Card tener como mínimo el campo "nombre"
+                    completado (único campo *requerido) lo que da una diversidad grande para confeccionar la misma al
+                    ser todos los demás campos presentados opcionales para el usuario. No obstante, como se guardaran
+                    estos datos como un contacto, deben llenarse los campos elegidos de forma correcta o se obtendrá una
+                    información de contacto poco clara o incorrecta.</p>
             </div>
         </div>
     </article>
     <article class="node-article" *ngIf="type === 'wifi' ">
         <div class="view">
             <div id="consejo-wifi" class="consejo">
-                <h3>Acá va el consejo sobre wifi</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti, at similique dignissimos
-                    nulla temporibus earum soluta illo voluptates non modi adipisci beatae, alias animi veniam natus
-                    voluptatem, deleniti in.</p>
+                <h3>Acceder a una red WIFI</h3>
+                <p>Los lectores de QR pueden leer los datos de conexión y configuración de wi-fi y permitir al usuario
+                    conectarse a la red en cuestión. Siendo una forma práctica para compartir una cuenta de wi-fi. Para
+                    poder generar una conexión exitosa a través de los datos del QR se tiene que plasmar la
+                    configuración de la red exactamente como se encuentra configurada, siendo de mucha importancia el
+                    escribir el nombre de red (SSID) de forma correcta, introducir una clave validad, colocar el cifrado
+                    de la red, la gran mayoría de redes usan cifrado WPA, siendo en menor medida usadas las WPE (puede
+                    encontrarse qué configuración tiene una red desde un celular o pc accediendo a las opciones de una
+                    red que te encuentres conectada o incluso una red a la que no hayas accedido aún, también puede
+                    verse dicha configuración en la lista de wi-fi guardados). Por último, establecer si el nombre de
+                    red se encuentra visible para los demás o si está oculto. Si se llenaron los campos correctamente,
+                    el código QR puede conectar a una red leyéndolo con un escáner compatible. Una vez que se accede con
+                    éxito a una red wi-fi esta se almacena en la lista de wi-fi del dispositivo de forma permanente, o
+                    hasta que sea eliminada de forma manual o por una formateo o restauración de fábrica del
+                    dispositivo.</p>
             </div>
         </div>
     </article>
     <article class="node-article" *ngIf="type === 'mapa' ">
         <div class="view">
             <div id="consejo-mapa" class="consejo">
-                <h3>Acá va el consejo sobre ubicación</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti, at similique dignissimos
-                    nulla temporibus earum soluta illo voluptates non modi adipisci beatae, alias animi veniam natus
-                    voluptatem, deleniti in.</p>
+                <h3>Comparte una ubicación en googlemaps</h3>
+                <p>Compartir una ubicación con QR es sencillo y práctico. Este tipo de QR solo requiere 2 campos de
+                    texto, las coordenadas de latitud y longitud (°grados decimales), datos que pueden ser obtenidos por medio de cualquier
+                    aplicación de mapas introduciendo una dirección, siendo la aplicación de Google Maps la más usada
+                    por el mercado, en su versión web estos datos pueden hallarse haciendo clic derecho sobre una
+                    ubicación. Sin embargo, para hacer más sencillo el dar con estas coordenadas, comparto el link del
+                    sitio web <a href="https://www.coordenadas-gps.com/" target="_blank">coordenadas-gps</a> diseñado para encontrar coordenadas de forma más
+                    intuitiva y directa. El resultado del código QR generado será un link a google maps con las
+                    respectivas coordenadas y puede verse tanto desde pc, net, navegador de celular y la app de Google
+                    Maps.</p>
             </div>
         </div>
     </article>

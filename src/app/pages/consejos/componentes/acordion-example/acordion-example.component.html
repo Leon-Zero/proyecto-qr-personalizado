@@ -3,81 +3,15 @@
         <input id="accordion-question" name="accordion" type="radio" checked />
         <label for="accordion-question">
             <a class="hvr-icon-spin">
-                <span id="quote-left" class="fa-solid fa-quote-left hvr-icon"></span> TEXTO <span
-                    id="quote-right" class="fa-solid fa-quote-right hvr-icon"></span>
+                <span id="quote-left" class="fa-solid fa-quote-left hvr-icon"></span> TEXTO <span id="quote-right"
+                    class="fa-solid fa-quote-right hvr-icon"></span>
             </a>
             <i class="fa-solid fa-angles-down open"></i>
             <i class="fa-solid fa-xmark close"></i>
         </label>
         <div class="accordion-body">
 
-            <h3>Acá va el consejo sobre url</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti, at similique dignissimos
-                nulla temporibus earum soluta illo voluptates non modi adipisci beatae, alias animi veniam natus
-                voluptatem, deleniti in.</p>
-
-        </div>
-    </article>
-
-    <article class="accordion-panel hvr-shutter-out-horizontal">
-        <input id="accordion-question-2" name="accordion" type="radio" />
-        <label for="accordion-question-2">
-            <a class="contenedor hvr-icon-forward">
-                <span class="span-icon">COLORES</span>
-                <span id="brush" class="fa-solid fa-brush"></span>
-            </a>
-            <i class="fa-solid fa-angles-down open"></i>
-            <i class="fa-solid fa-xmark close"></i>
-        </label>
-        <div class="accordion-body">
-
-            <h3>Acá va el consejo sobre colores</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti, at similique dignissimos
-                nulla temporibus earum soluta illo voluptates non modi adipisci beatae, alias animi veniam natus
-                voluptatem, deleniti in.</p>
-
-
-
-        </div>
-    </article>
-
-    <article class="accordion-panel hvr-shutter-out-horizontal">
-        <input id="accordion-question-3" name="accordion" type="radio" />
-        <label for="accordion-question-3">
-            <a class="contenedor hvr-icon-forward">
-                <span class="span-icon">ICONOS</span>
-                <span id="icons" class="fa-solid fa-icons hvr-icon"></span>
-            </a>
-            <i class="fa-solid fa-angles-down open"></i>
-            <i class="fa-solid fa-xmark close"></i>
-        </label>
-        <div class="accordion-body">
-
-            <h3>Acá va el consejo sobre iconos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti, at similique dignissimos
-                nulla temporibus earum soluta illo voluptates non modi adipisci beatae, alias animi veniam natus
-                voluptatem, deleniti in.</p>
-
-
-        </div>
-    </article>
-
-    <article class="accordion-panel hvr-shutter-out-horizontal">
-        <input id="accordion-question-4" name="accordion" type="radio" />
-        <label for="accordion-question-4">
-            <a class="contenedor hvr-icon-forward">
-                <span class="span-icon">MARCOS</span>
-                <span id="wrap-icon" class="fa-solid fa-expand hvr-icon"></span>
-            </a>
-            <i class="fa-solid fa-angles-down open"></i>
-            <i class="fa-solid fa-xmark close"></i>
-        </label>
-        <div class="accordion-body">
-
-            <h3>Acá va el consejo sobre marcos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti, at similique dignissimos
-                nulla temporibus earum soluta illo voluptates non modi adipisci beatae, alias animi veniam natus
-                voluptatem, deleniti in.</p>
+            <app-menu-type-example></app-menu-type-example>
 
         </div>
     </article>
@@ -94,12 +28,16 @@
         </label>
         <div class="accordion-body">
 
-            <h3>Acá va el consejo sobre Tamaños</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti, at similique dignissimos
-                nulla temporibus earum soluta illo voluptates non modi adipisci beatae, alias animi veniam natus
-                voluptatem, deleniti in.</p>
-
-
+            <p>Se dispone de 3 opciones para modificar el tamaño de los elementos personalizables al QR:</p>
+            <ul>
+                <li>Tamaño del QR</li>
+                <li>Tamaño del marco</li>
+                <li>Tamaño del icono</li>
+            </ul>
+            <p>Use la combinación de estos valores para mejorar la estética del resultado o priorizar la lectura del QR.
+                Recuerde que marco e icono según la configuración de tamaño pueden tapar o no el QR, haciendo que en
+                oclusiones mayores el QR sea ilegible, por tal deben ajustarse los tamaños para evitar estos problemas,
+                o en su defecto cambiar el nivel de corrección de errores a uno que pueda soportar las oclusiones.</p>
         </div>
     </article>
     <article class="accordion-panel hvr-shutter-out-horizontal">
@@ -113,11 +51,25 @@
             <i class="fa-solid fa-xmark close"></i>
         </label>
         <div class="accordion-body">
-
-            <h3>Acá va el consejo sobre opciones</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti, at similique dignissimos
-                nulla temporibus earum soluta illo voluptates non modi adipisci beatae, alias animi veniam natus
-                voluptatem, deleniti in.</p>
+            <p>
+                Como ya se estableció, la <b>corrección de error</b> de un código QR permite decodificarlo, aunque esté
+                parcialmente oscurecido o ligeramente dañado, gracias al patrón que contiene información duplicada
+                (redundancia) de los contenidos.
+                Hay cuatro niveles de corrección de error: L, M, Q y H. Cada nivel tiene su propio porcentaje de daño
+                que
+                puede sostener:
+            </p>
+            <ul>
+                <li>Nivel L (low - bajo), 7% de palabras de código se puede restaurar.</li>
+                <li>Nivel M (medium - medio), 15% de palabras de código se puede restaurar.</li>
+                <li>Nivel Q (quartile - cuarto), 25% de palabras de código se puede restaurar.</li>
+                <li>Nivel H (high - alto) 30% de palabras de código se puede restaurar.</li>
+            </ul>
+            <p>Cuál utilizar depende del tamaño real del código QR a imprimir o de la oclusión que este tenga encima
+                (iconos, marcos, contraste de colores), así como también la obstrucción visual que pueda interponerse
+                entre el código QR y el escáner al momento de verificarlo (vidrios, plástico, luces, objetos, etc.). A
+                mayor nivel mayor será la densidad de datos duplicados que contenga el QR, por tal la densidad de
+                cuadrados negros en el QR resultante será mayor.</p>
 
         </div>
     </article>

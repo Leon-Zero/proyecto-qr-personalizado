@@ -1,7 +1,7 @@
 <div class="wrapping">    
     <form>
         <div class="container">
-            <label for="width">Tamaño QR ({{width + 'px X ' + width + 'px'}})</label>
+            <label for="width">Tamaño QR ({{width * 2 + 'px X ' + width * 2 + 'px'}})</label>
             <input id="width" class="input-range" type="range" name="width" min="150" max="400" step="10"
             [(ngModel)]="width" (input)="sendWidth(width)" valueAsNumber>
         </div>
@@ -11,8 +11,8 @@
             [(ngModel)]="sizeIcon" (input)="sendSizeIcon(sizeIcon)" valueAsNumber>
         </div>
         <div class="container">
-            <label for="size-wrap">Tamaño Marco ({{sizeWrap + '% '}})</label>
-            <input id="size-wrap" class="input-range" type="range" name="size-wrap" min="60" max="100" step="2"
+            <label for="size-wrap">Tamaño Marco ({{sizeWrap * 20 + 'px'}})</label>
+            <input id="size-wrap" class="input-range" type="range" name="size-wrap" min="20" max="50" step="2"
             [(ngModel)]="sizeWrap" (input)="sendSizeWrap(sizeWrap)" valueAsNumber>
         </div>
     </form>

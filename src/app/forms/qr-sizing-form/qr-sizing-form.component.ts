@@ -10,11 +10,14 @@ export class QrSizingFormComponent implements OnInit {
 
   constructor(public qrService: QrValuesService) { }
 
-  width: number = 200;
+  width: number = 150;
   sizeIcon: number = 6;
-  sizeWrap: number = 60;
+  sizeWrap: number = 20;
 
   ngOnInit(): void {
+    this.qrService.observableSizeWrap.subscribe(response =>{
+      this.sizeWrap = response;
+    });
   }
   sendWidth(width: number){
     this.qrService.sendWidth (width);

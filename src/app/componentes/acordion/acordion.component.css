@@ -1,11 +1,4 @@
 /* Acordion estilos generales */
-section{
-    height: auto;
-    position: relative;
-    left: 0;
-    top: 0;
-    display: inline-flex;
-}
 .row{
     display: flex;
     align-items: flex-start;
@@ -27,6 +20,11 @@ section{
     max-width: 650px;
     margin-inline: auto;
     padding: 10px 5px;
+    display: inline-flex;
+    position: relative;
+    left: 0;
+    top: 0;
+
 }
 
 .title {
@@ -41,7 +39,6 @@ section{
     margin-bottom: 10px;
     border: 2px solid #2c494f;
     border-radius: 50px;
-    background-color: rgba(235, 246, 250, 0.7);
 }
 
 .accordion input {
