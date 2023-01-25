@@ -114,3 +114,19 @@ h4{
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+
+   /* diseño responsive  */
+   @media only screen and (max-width: 930px){
+    .wrap{
+        margin: 2em 0;
+    }
+    #form-contacto{
+        width: 90%;
+    }
+    h4{
+        font-size: 14px;
+    }
+    .input-form{
+        width: 90%;
+    }
+   }
