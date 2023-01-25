@@ -10,7 +10,7 @@
 }
 
 .accordion-panel {
-    padding: 0 4em;
+    padding: 0 6em;
     width: 80vw;
     margin-bottom: 10px;
     border: 2px solid #2c494f;
@@ -65,15 +65,17 @@
     align-items: center;
     flex-direction: column;
     gap: 5px;
+    padding: 0 4em;
 }
 .accordion-body p{
-    font-size: 18px;
+    font-size: 16px;
     font-family:"Roboto", sans-serif;
     color: rgb(0, 0, 0);
     text-align: justify;
+    padding: 2em;
 }
 .accordion-body ul li{
-    font-size: 18px;
+    font-size: 15px;
     font-family:"Roboto", sans-serif;
     color: rgb(0, 0, 5);
 }
@@ -86,51 +88,16 @@
     opacity: 1;
     transform: scale(1);
 }
-/* Icono color animación  */
 .contenedor{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-flow: row nowrap;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-.contenedor ul{
-    position: relative;
-    display: flex;
-    width: 100%;
-    left: .6em;
-}
-
-.contenedor ul li{
-    position: relative;
-    list-style: none;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
 }
 .contenedor ul li span #brush{
     color:#126ef8;
     font-size: 22px;
 }
-
-/* Icon Spin */
-#quote-left{
-    margin-right: 1em;
-}
-#quote-right{
-    margin-left: 1em;
-}
-.hvr-icon{
-    color: var(--button-hover-bg-color);
-    font-size: 28px;
-}
-.hvr-icon-spin {
-    display: flex;
-    width: 50vw;
-}
-  /*  icono "iconos", animacion  */
 .span-icon{
 display: flex;
 width: 7em;
@@ -140,15 +107,7 @@ width: 7em;
     font-size: 28px;
     display: flex;
     color: #126ef8;
-}
-
- /* Icon Forward */
-.hvr-icon-forward {
-    display: flex;
-    vertical-align: middle;
-    width: 50vw;
-  }
-  
+}  
   /* Shutter Out Horizontal */
 .hvr-shutter-out-horizontal {
     -webkit-transform: perspective(1px) translateZ(0);
@@ -185,3 +144,41 @@ width: 7em;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+
+   /* diseño responsive  */
+   @media only screen and (max-width: 930px){    
+    .accordion-panel {
+        width: 90vw;
+        margin-bottom: 10px;
+    }    
+    .accordion label {
+        column-gap: 12px;
+        font-size: 14px;
+    }
+    .accordion-body p{
+        font-size: 15px;
+    }
+    .accordion-body ul li{
+        font-size: 15px;
+        font-family:"Roboto", sans-serif;
+        color: rgb(0, 0, 5);
+    }
+    .contenedor ul li span #brush{
+        color:#126ef8;
+        font-size: 18px;
+    }
+    .span-icon{
+    width: 5em;
+    }
+    
+    #icons, #wrap-icon, #size-icon, #option-icon, #brush{
+        font-size: 18px;
+        display: flex;
+        color: #126ef8;
+    }  
+   }
+   @media only screen and (max-width: 590px){    
+    .accordion-panel {
+        padding: .5em 2em;
+    }    
+}

@@ -1,6 +1,6 @@
 header{
     width: 100vw;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ header img{
     z-index: -1;
 }
 header h2{
-    font-size: 5vw;
+    font-size: 6vw;
     font-family:"Roboto", sans-serif;
     font-weight: 900;
     text-transform: uppercase;
@@ -31,7 +31,7 @@ header h2{
 }
 header h2::before{
     content: "consejos utiles";
-    font-size: 5vw;
+    font-size: 6vw;
     font-family:"Roboto", sans-serif;
     font-weight: 900;
     text-transform: uppercase;
@@ -47,13 +47,14 @@ section{
     align-items: center;
     gap: 2em;
     flex-flow: column nowrap;
+    padding: 0;
 }
 .view{
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding: .3em 3em;
+    flex-flow: column nowrap;
 }
 h3{
     font-size: 18px;
@@ -65,9 +66,30 @@ h3{
     letter-spacing: .1em;
     text-align: center;
 }
+.consejo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
 article .view .consejo p{
     font-size: 15px;
     font-family:"Roboto", sans-serif;
     color: rgb(0, 0, 0);
     text-align: justify;
+    width: 90vw;
+    padding: 0;
 }
+
+ /* diseño responsive  */
+ @media only screen and (max-width: 930px){
+    section{
+        gap: 1em;
+    }
+    h3{
+        font-size: 14px;
+    }
+    article .view .consejo p{
+        font-size: 12px;
+    }   
+ }

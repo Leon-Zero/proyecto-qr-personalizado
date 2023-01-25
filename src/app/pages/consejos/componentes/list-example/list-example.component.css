@@ -1,16 +1,16 @@
 #flex-consejo{
     display: flex;
-    padding: 0 3em;
+    padding: 0;
     margin: 3em 0;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     gap: 4em;
     width: 100%;
 }
 #flex-consejo ul{
     display: flex;
-    width: 100%;
+    width: 38em;
     margin: 0 1em;
     flex-flow: column nowrap;
     padding: 3em 1em;
@@ -67,7 +67,8 @@
 }
 .content{
     display: flex;
-    width: 100%;
+    width: 55em;
+    min-height: 55em;
     border: 6px dashed rgba(27, 26, 26, 0.603);
     align-items: center;
     justify-content: center;
@@ -106,3 +107,16 @@
         padding: .5em;
         min-height: 5em;
      }
+ /* diseño responsive  */
+ @media only screen and (max-width: 630px){
+    .content{
+        width: 43em;
+        min-height: 43em;
+        border: 3px dashed rgba(27, 26, 26, 0.603);
+    }
+    .content .parent {
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+        padding: .2em;
+    } 
+ }

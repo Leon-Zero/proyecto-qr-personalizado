@@ -10,7 +10,6 @@
     align-items: center;
     gap: 2em;
     flex-flow: column nowrap;
-    padding: 3em;
 }
 .view{
     display: flex;
