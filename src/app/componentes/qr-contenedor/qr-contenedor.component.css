@@ -45,7 +45,7 @@
     border: none;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
-    text-shadow: 1px 1px 2ox #5894ee;
+    text-shadow: 1px 1px 2px #5894ee;
     color: #000000;
     background-color: #74a6f1b0;
     margin: 1em;
@@ -82,3 +82,25 @@
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
    }
+
+    /* diseño responsive  */
+  @media only screen and (max-width: 530px){
+    #contentQR{
+        width: 40em;
+        height: 40em;
+        border: 2px dashed rgba(27, 26, 26, 0.603);
+    }
+    #capture{
+        outline: 2px dashed rgb(91, 240, 91);
+    }
+      .btn {
+        font-size: 12px;
+       }
+       
+       .btn:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+       }                     
+       .btn:hover::after {
+        transform: scaleX(1.2) scaleY(1.2);
+       }
+  }

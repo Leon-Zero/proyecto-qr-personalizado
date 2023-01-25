@@ -14,3 +14,14 @@
     display: grid;
     place-items: center;
 }
+ /* diseño responsive  */
+ @media only screen and (max-width: 930px){
+    .node{
+        padding: 0;
+    }
+ }
+ @media only screen and (max-width: 530px){
+    .node{
+        gap: 8em;
+    }
+ }

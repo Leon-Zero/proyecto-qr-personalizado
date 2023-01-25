@@ -58,3 +58,17 @@ label{
           }
 
   }
+
+   /* diseño responsive  */
+   @media only screen and (max-width: 930px){
+    .input-range[type='range'] {
+      display: flex;
+      overflow: hidden;
+      width: 18em;
+      height: .8em;
+      transform: scale(1.2);
+      }
+      .input-range[type='range']::-webkit-slider-thumb {
+        width: 1.5em;
+      }
+   }
