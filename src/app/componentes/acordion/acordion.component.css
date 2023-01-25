@@ -21,7 +21,6 @@
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    min-width: 650px;
     height: 100%;
 }
 
@@ -33,10 +32,11 @@
 
 .accordion-panel {
     padding: 0 4em;
-    width: 50vw;
+    width: 70rem;
     margin-bottom: 10px;
     border: 2px solid #2c494f;
     border-radius: 50px;
+    background-color: #fcfcfc;
 }
 
 .accordion input {
@@ -303,4 +303,26 @@ width: 7em;
   .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+  }
+
+  /* diseño responsive  */
+  @media only screen and (max-width: 930px){
+
+    .container {
+        padding: 5px 5px;
+    }
+    .row{
+        gap: 10px;
+    }
+    
+    .title {
+        display: flex;
+        font-size: 1.5rem;
+    }
+    
+    .accordion-panel {
+        padding: 0 1.5rem;
+        width: 50rem;
+        margin-bottom: 5px;
+    }
   }

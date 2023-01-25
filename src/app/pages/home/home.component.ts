@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CargarScriptService } from 'src/app/servicios/cargar-script.service';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor( ) {
-  }
-  ngOnInit(): void {
+  constructor(private cargaScript: CargarScriptService){}
+  ngOnInit(){
+    
+    this.cargaScript.carga(['iconDevs']);
+    this.cargaScript.carga(['iconFinance']);
+    this.cargaScript.carga(['iconPlataform']);
+    this.cargaScript.carga(['iconSocial']);
   }
 }

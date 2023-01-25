@@ -8,7 +8,7 @@ import { QrValuesService } from 'src/app/servicios/qr-values.service';
 })
 export class AcordionComponent implements OnInit {
 
-  constructor(private qrService: QrValuesService) { }
+  constructor(private qrService: QrValuesService) {  }
 
   type: string ="url";
 

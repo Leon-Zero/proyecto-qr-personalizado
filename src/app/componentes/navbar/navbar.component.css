@@ -1,6 +1,6 @@
 nav{
     width: 100vw;
-    height: 5em;
+    height: auto;
     display: inline-flex;
     padding-right: 0 4em;
     background: #3276969a;
@@ -12,7 +12,7 @@ nav{
 }
 .contenedor{
     width: 100%;
-    height: 100%;
+    height: 5.5em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -20,11 +20,39 @@ nav{
     align-items: center;
     align-content: center;
 }
+#logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  place-items: center start;
+  margin-right: auto;
+}
+#logo span{
+  font-size: 2.5em;
+  display: flex;
+  align-self: center;
+  background-color: #495285;
+  color: #0f0f0f;
+  padding: .2em .25em;
+  border-radius: .3em;
+  border: rgb(255, 255, 255) 5px solid;
+}
+#logo h4{
+  font-size: 2.5em;
+  font-family:"Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #b8bcd5;
+  text-shadow: 0 6px 15px #122072e0;
+  letter-spacing: .3em;
+}
+
 .nav-item{
     display: flex;
     height: 100%;
-    width: 16em;
-    align-items: center;
+    width: 15.5em;
+    align-items: stretch;
     justify-content: center;
 }
   button {
@@ -40,7 +68,6 @@ nav{
     padding: .3em 1.2em;
     align-items: center;
     justify-content: center;
-    gap: .5em;
     font-family: "Roboto", sans-serif;
   }
   
@@ -51,7 +78,11 @@ nav{
     font-size: 16px;
     color: var(--primary-color)
   } 
-  
+  #btn-page-1:hover svg {
+    transform: translateX(6px);
+    fill: #e8e8e8;
+    filter: drop-shadow(0 2px 2px rgba(10, 10, 10, 0.8));
+  }
   #btn-page-2:hover svg {
     transform: translateX(6px);
     fill: #f11414f1;
@@ -120,3 +151,64 @@ nav{
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
+
+   /* diseño responsive  */
+   @media only screen and (max-width: 930px){
+    nav{
+      width: 100vw;
+      padding-right: 0 1.8rem;
+      box-shadow: inset 0 -3px 4px var(--primary-color);
+      padding: 0 1.5rem;
+  }
+  .contenedor{
+      height: 3rem;
+  }
+  #logo{
+    gap: .5em;
+  }
+  #logo span{
+    font-size: 1.5em;
+    padding: .3em .3em;
+    border: rgb(255, 255, 255) 2px solid;
+  }
+  #logo h4{
+    font-size: 1.2rem;
+    text-shadow: 0 3px 8px #122072e0;
+    letter-spacing: .3em;
+  }
+  
+  .nav-item{
+      width: 10rem;
+  }
+    button {
+      font-size: 12.5px;
+      padding: .2em .5em;
+      gap: .2rem;
+    }
+    
+    button p {
+      font-size: 12.5px;
+    } 
+    #btn-page-1:hover svg {
+      transform: translateX(3px);
+    }
+    #btn-page-2:hover svg {
+      transform: translateX(3px);
+    }
+    #btn-page-3:hover svg {
+      transform: translateX(3px);
+      fill: #f8f41ff6;
+    }
+    #btn-page-4:hover svg {
+      transform: translateX(3px);
+    }
+    button svg {
+      width: 14px;
+      height: 14px;
+    }
+}
+@media only screen and (max-width: 560px){
+  #logo{
+    display: none;
+  }
+}

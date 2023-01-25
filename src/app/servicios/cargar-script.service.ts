@@ -11,7 +11,9 @@ export class CargarScriptService {
     for( let archivo of archivos){
       let script = document.createElement("script");
       script.src = "./assets/jscript_dropmenu/" + archivos + ".js";
-      let body = document.getElementsByTagName("body")[0];
+      script.type = "text/javascript";
+      script.async = true;
+      let body = document.getElementsByTagName("head")[0];
       body.appendChild( script );
     }
   }

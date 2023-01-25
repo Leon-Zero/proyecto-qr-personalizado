@@ -12,4 +12,8 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goTop(){
+    document.getElementById('nav-bar')?.scrollIntoView({behavior: "smooth"});
+  }
+
 }

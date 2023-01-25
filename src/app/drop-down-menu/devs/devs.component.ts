@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CargarScriptService } from 'src/app/servicios/cargar-script.service';
 import { QrValuesService } from 'src/app/servicios/qr-values.service';
 
 @Component({
@@ -9,9 +8,7 @@ import { QrValuesService } from 'src/app/servicios/qr-values.service';
 })
 export class DevsComponent implements OnInit {
 
-  constructor(public qrService: QrValuesService,
-    private cargaScript: CargarScriptService) {
-    cargaScript.carga(['iconDevs'])
+  constructor(public qrService: QrValuesService) {
   }
 
   valueIcon: string = "";

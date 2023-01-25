@@ -1,1 +1,24 @@
-<p>contacto works!</p>
+<div class="wrap">
+    <form ngNoForm class="hvr-shutter-out-horizontal" id="form-contacto" [action]="'https://formsubmit.co/' + mail" method="POST" role="form" name="form"> 
+        <h4>Formulario de Contacto</h4>
+            <div class="column">
+                <label for="FormControlInput1">Nombre y Apellido</label>
+                <input class="input-form" type="text" id="FormControlInput1" placeholder="Leonardo Ismael Hidalgo..." name="nombre" required>
+            </div>
+            <div class="column">
+                <label for="FormControlInput2">Dirección Email</label>
+                <input class="input-form" type="email" id="FormControlInput2" placeholder="name@ejemplo.com" name="email" required>
+            </div>
+            <div class="column">
+                <label for="FormControlTextarea1">Escriba el asunto de contacto</label>
+                <textarea class="input-form" id="FormControlTextarea1" rows="6" name="mensaje" required></textarea>
+            </div> 
+
+            <input type="hidden" name="_next" [value]="return">
+            <input type="hidden" name="_subject" [value]="asunto">
+            <input type="hidden" name="_autoresponse" [value]="autoResponse">
+            <input type="hidden" name="_template" value="box">
+
+        <button class="btn" type="submit">Enviar</button>
+    </form> 
+</div>

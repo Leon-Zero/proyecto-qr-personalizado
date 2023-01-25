@@ -1,13 +1,16 @@
-app-qr-contenedor{
-position: fixed;
-top: 7em;
-right: 4em;
-}
-
 .node{
     padding: 0 2em;
     position: relative;
     width: 100%;
     min-height: 650px;
     max-height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 4em;
+}
+.flex-wrap{
+    display: grid;
+    place-items: center;
 }

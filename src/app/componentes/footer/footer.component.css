@@ -186,3 +186,56 @@ footer .parent .div3 a:hover span{
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
   }
+
+  /* diseño responsive  */
+  @media only screen and (max-width: 930px){
+    footer{
+      margin-top: 1rem;
+      padding: .5rem 1.5rem;
+  }
+  .parent {
+      grid-column-gap: 5px;
+      margin-bottom: .5em;
+      }
+      .div1 { 
+          gap: .5em;
+      }
+      .div3 {          
+          gap: .8em;
+          padding-right: .5em;
+      }
+  .flex-box{
+      margin: .5em 0;
+      padding-left: .8rem;
+  }
+  .flex-box p{
+      font-size: 10px;
+      padding: 0 .8em 0 .5em;
+  }
+  footer .parent .div1 span{
+      font-size: 3em;
+      padding: .2em .25em;
+  }
+  footer .parent .div1 h4{
+      font-size: 1.8em;
+      text-shadow: 0 3px 8px #122072e0;
+      letter-spacing: .2rem;
+  }
+  button {
+      width: 30px;
+      height: 30px;
+      bottom: 20px;
+      right: 20px;
+      border: 1px solid #070d30d0;
+      filter: drop-shadow(0 3px 8px rgba(2, 4, 32, 0.904));
+      font-size: 18px;
+      padding-top: .2em;
+    }  
+  footer .parent .div3 a span{
+      font-size: 1.8rem;
+  }
+  footer .parent .div3 a:hover span{
+      transform: scale(1.1);
+  }
+   
+  }

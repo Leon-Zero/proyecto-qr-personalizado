@@ -72,3 +72,22 @@ span{
   display: flex;
   justify-content: center;
 }
+
+/* diseño responsive  */
+@media only screen and (max-width: 930px){
+    .nav-body{
+        width: 40em;
+        height: 4em;
+    }
+    nav{
+        gap: .5em;
+    }
+    span{
+      width: 20px;
+      height: 40px;
+      font-size: 18px;
+    }
+    label{
+        font-size: 12px;
+    }
+}

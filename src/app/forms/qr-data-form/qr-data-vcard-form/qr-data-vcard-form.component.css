@@ -88,3 +88,42 @@ position: relative;
     position: relative;
     left: .3em;
 }
+
+/* diseño responsive  */
+@media only screen and (max-width: 930px){
+    form{
+        gap: 5px;
+    }
+    .input-vcard{
+    font-size: 12px;
+    filter: drop-shadow(2px 2px 2px #7b86d3);
+    margin-top: 5;
+    border: 2px solid #9f9fea;
+    padding: .1em;
+    }
+    .input-vcard:focus{
+    border: 2px #3131bc solid;
+    }
+    
+    label{
+    font-size: 11px;
+    }
+    span i{
+        font-size: 12px;
+        margin: 0 .1em;
+    }
+        .input-group{
+            gap: .8em;
+        }
+    .btn {
+        font-size: 12px;
+        padding: 5px 10px 5px 10px;
+        margin: .5em;
+        }
+    #v-nacimiento{
+        width: 15.2em;
+        position: relative;
+        left: .1em;
+    }
+   
+}
