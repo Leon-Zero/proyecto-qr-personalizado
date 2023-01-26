@@ -21,6 +21,8 @@ export class QrDataWifiFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
   ssidValue(ssid: string) {
     this.ssid = ssid;
   }

@@ -1,6 +1,7 @@
 footer{
-    width: 100vw;
+    max-width: 100%;
     margin-top: 3em;
+    box-sizing: border-box;
     padding: 1.5em 3em;
     background: hsla(199, 29%, 60%, 0.95);
     box-shadow: inset 0 5px 8px var(--primary-color);

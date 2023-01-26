@@ -18,7 +18,14 @@ export class QrSizingFormComponent implements OnInit {
     this.qrService.observableSizeWrap.subscribe(response =>{
       this.sizeWrap = response;
     });
+    this.qrService.observableWidth.subscribe(response =>{
+      this.width = response;
+    });
+    this.qrService.observableSizeIcon.subscribe(response =>{
+      this.sizeIcon = response;
+    });
   }
+  
   sendWidth(width: number){
     this.qrService.sendWidth (width);
   }

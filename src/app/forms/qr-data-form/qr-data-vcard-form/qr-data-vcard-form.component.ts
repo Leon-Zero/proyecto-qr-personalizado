@@ -32,6 +32,7 @@ export class QrDataVcardFormComponent implements OnInit {
 
 
   ngOnInit(): void {
+
   }
 
   nombreValue(nombre: string) {

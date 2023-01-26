@@ -10,6 +10,7 @@
     align-items: center;
     gap: 2em;
     flex-flow: column nowrap;
+    margin: 2em 0;
 }
 .view{
     display: flex;
@@ -33,4 +34,5 @@ article .view .consejo p{
     font-family:"Roboto", sans-serif;
     color: rgb(0, 0, 0);
     text-align: justify;
+    margin: 1em 0;
 }

@@ -16,6 +16,9 @@ export class NavbarComponent implements OnInit {
   goQr(){
     location.replace('http://localhost:4200/');
   }
+  goAcercaDe(){
+    this.router.navigate(['acerca-del-proyecto']);
+  }
   goConsejos(){
     this.router.navigate(['consejos-utiles']);
   }

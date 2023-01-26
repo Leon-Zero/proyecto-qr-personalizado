@@ -8,11 +8,17 @@ import { QrValuesService } from 'src/app/servicios/qr-values.service';
 })
 export class QrColorFormComponent implements OnInit {
 
-  light: string = "#ffffff";
+  light: string = "#e8e8e8";
   dark: string = "";
   constructor(public qrService: QrValuesService) { }
   
   ngOnInit(): void {
+    this.qrService.observableLight.subscribe(response =>{
+      this.light = response;
+    });
+    this.qrService.observableDark.subscribe(response =>{
+      this.dark = response;
+    });
   }
 
   sendDark(dark: string){

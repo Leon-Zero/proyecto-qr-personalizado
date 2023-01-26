@@ -15,7 +15,11 @@ url: string = "";
 
   constructor(public qrService: QrValuesService) { }
 
-  ngOnInit(): void {  }
+  ngOnInit(): void { 
+    this.qrService.observableUrl.subscribe(response =>{
+      this.url = response;
+  });
+   }
 
   sendUrl(url: string){
     this.qrService.sendUrl(url);

@@ -11,7 +11,6 @@ export class DevsComponent implements OnInit {
   constructor(public qrService: QrValuesService) {
   }
 
-  valueIcon: string = "";
   name: string = "DEVS";
   path: string = "";
 

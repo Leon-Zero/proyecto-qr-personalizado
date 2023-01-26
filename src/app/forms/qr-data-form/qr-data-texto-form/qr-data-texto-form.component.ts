@@ -12,7 +12,11 @@ export class QrDataTextoFormComponent implements OnInit {
 
   texto: string ="";
 
-  ngOnInit(): void {  }
+  ngOnInit(): void { 
+    this.qrService.observableUrl.subscribe(response =>{
+      this.texto = response;
+  });
+   }
 
   sendUrl(texto: string){
     this.qrService.sendUrl(texto);

@@ -17,9 +17,8 @@ export class QrContenedorComponent implements OnInit {
   width= 150;
   dark="";
   light="";
-  class="qr-image";
   errorCorrectionLevel= NgxQrcodeErrorCorrectionLevels.HIGH;
-  scale=2000;
+  class="qr-image";
 
   ngOnInit(): void {
     this.qrService.observableUrl.subscribe(response =>{
@@ -38,7 +37,8 @@ export class QrContenedorComponent implements OnInit {
     this.errorCorrectionLevel= response;
   });
   }
-  convertToIMG(){
+
+ convertToIMG(){
     let element= document.getElementById('capture') as HTMLElement;
     html2canvas(element, {backgroundColor:"null", scale:2}).then(canvas => {
       let enlace = document.createElement('a');
@@ -47,6 +47,17 @@ export class QrContenedorComponent implements OnInit {
       enlace.href = canvas.toDataURL();
       enlace.click();
     });
+ }
+
+ cleanQrValues(){
+  this.qrService.sendDark('');
+  this.qrService.sendLight('#ffffff');
+  this.qrService.sendIcon('');
+  this.qrService.sendUrl('');
+  this.qrService.sendWraping('not_selection');
+  this.qrService.sendWidth(150);
+  this.qrService.sendSizeWrap(20);
+  this.qrService.sendSizeIcon(6);
  }
 
 }

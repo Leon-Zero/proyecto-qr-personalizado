@@ -1,1 +1,59 @@
-<p>acerca-de works!</p>
+<section>
+    <article>
+        <p>GENEX QR fue realizado en framework de Angular, con la ayuda de 2 bibliotecas principales para la generación
+            del código QR y el canvas que se descarga como imagen resultante. También se implementó sintaxis particular
+            del estándar MIME, V-Card versión 3, entre otros estándares, para la funcionalidad del texto en los
+            distintos tipos de QR. En este apartado les compartiré parte de esa información utilizada en la
+            implementación.</p>
+    </article>
+    <article class="hvr-shutter-out-horizontal">
+        <h3>Generación del codigo QR</h3>
+        <div class="flex-column">
+            <p>La imagen del código QR empleado en el proyecto corre a cargo de la biblioteca de
+                @techiediaries/ngx-qrcode, para la generación en framework angular. Esta biblioteca se encarga de
+                transformar el texto introducido en binario y crear un canvas del código QR que se codificara como una
+                imagen. Dispone de varias variables para manejar la lógica del código generado como también su apartado
+                visual. Dejo el link del sitio oficial de su librería donde podrán encontrar documentación, como
+                implementarla y demás cuestiones para que puedan aplicarlo en sus proyectos Angular.</p>
+        </div>
+        <div class="flex-column">
+            <a href="https://www.techiediaries.com/ngx-qrcode/">
+                <button type="submit" class="btn">@techiediaries</button>
+            </a>
+        </div>
+    </article>
+    <article class="hvr-shutter-out-horizontal">
+        <h3>Descarga de la Imagen</h3>
+        <div class="flex-column">
+            <p>La imagen generada para la descarga se realiza con la biblioteca html2canvas, el script le permite tomar
+                "capturas de pantalla" de páginas web o partes de ellas, directamente en el navegador de los usuarios.
+                La captura de pantalla se basa en el DOM y, como tal, puede que no sea 100 % precisa para la
+                representación real, ya que no hace una captura de pantalla real, sino que crea la captura de pantalla
+                en función de la información disponible en la página. Recopila información del DOM y renderiza un canvas
+                acorde a los datos utilizados. Como resultado, solo puede representar correctamente las propiedades que
+                comprende, lo que significa que hay muchas propiedades CSS que no funcionan. Para obtener más
+                información y documentación al respecto, visite el siguiente link:</p>
+        </div>
+        <div class="flex-column">
+            <a href="https://html2canvas.hertzen.com/">
+                <button type="submit" class="btn">HTML2CANVAS</button>
+            </a>
+        </div>
+    </article>
+    <article class="hvr-shutter-out-horizontal">
+        <h3>Sintaxis de texto</h3>
+        <div class="flex-column">
+            <p>Existen muchas sintaxis de texto estandarizadas para dar distintas funcionalidades a un código QR que son
+                reconocidas por los distintos escáneres de código de barras, les comparto una guía general de distintos
+                tipos de sintaxis, y el estándar del formato vcard utilizado para este proyecto.</p>
+        </div>
+        <div class="flex-row">
+            <a href="https://www.nilovelez.com/2012/08/guia-de-formatos-de-contenido-para-codigos-qr/">
+                <button type="submit" class="btn">guia de formatos</button>
+            </a>
+            <a href="https://datatracker.ietf.org/doc/id/draft-ietf-vcarddav-vcardrev-01.html">
+                <button type="submit" class="btn">Especificación vcard</button>
+            </a>
+        </div>
+    </article>
+</section>

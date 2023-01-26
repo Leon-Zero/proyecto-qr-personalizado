@@ -11,7 +11,6 @@ export class FinanceComponent implements OnInit {
   constructor(public qrService: QrValuesService) {
   }
 
-  valueIcon: string = "";
   name: string = "FINANZAS";
   path: string = "";
 

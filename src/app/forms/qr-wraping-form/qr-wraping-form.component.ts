@@ -19,6 +19,9 @@ export class QrWrapingFormComponent implements OnInit {
   constructor(public qrService: QrValuesService) { }
 
   ngOnInit(): void {
+    this.qrService.observableWraping.subscribe(response =>{
+      this.wraping = response;
+    });
   }
 
   sendWraping(wraping: string) {
