@@ -202,13 +202,17 @@ app-qr-color-form, app-qr-sizing-form, app-social, app-plataform, app-devs, app-
 /* Icon Spin */
 #quote-left{
     margin-right: 1em;
+    font-size: 28px;
+    color: #126ef8;
 }
 #quote-right{
     margin-left: 1em;
+    font-size: 28px;
+    color: #126ef8;
 }
 .hvr-icon{
     color: var(--button-hover-bg-color);
-    font-size: 24px;
+    font-size: 28px;
 }
 .hvr-icon-spin {
     display: flex;

@@ -1,3 +1,7 @@
+.wraping{
+display: inline-block;
+margin: 2em 0;
+}
 form{
     width: 50%;
     height: 50%;
@@ -6,9 +10,6 @@ form{
     justify-content: flex-start;
     flex-flow: column;
     gap: 10px;
-}
-.wraping{
-display: inline-block;
 }
 #input-texto{
 font-family: Verdana, Geneva, Tahoma, sans-serif;

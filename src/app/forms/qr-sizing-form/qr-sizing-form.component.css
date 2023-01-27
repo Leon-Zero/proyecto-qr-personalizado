@@ -9,6 +9,7 @@ form{
 }
 .wraping{
 display: inline-block;
+margin: 2em 0;
 }
 .input-range{
     margin: 15px 1em;

@@ -56,8 +56,9 @@ export class QrContenedorComponent implements OnInit {
   this.qrService.sendUrl('');
   this.qrService.sendWraping('not_selection');
   this.qrService.sendWidth(150);
-  this.qrService.sendSizeWrap(20);
+  this.qrService.sendSizeWrap(15);
   this.qrService.sendSizeIcon(6);
+  this.qrService.sendType('url');
  }
 
 }

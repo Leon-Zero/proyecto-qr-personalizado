@@ -9,7 +9,7 @@ import { QrValuesService } from 'src/app/servicios/qr-values.service';
 export class WrappingComponent implements OnInit {
 
   wrapingValues: string= "not_selection";
-  sizeWrapValues: number=20;
+  sizeWrapValues: number=15;
 
   constructor(private qrService: QrValuesService) { } 
 

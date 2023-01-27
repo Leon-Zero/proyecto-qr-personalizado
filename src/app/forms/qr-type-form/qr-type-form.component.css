@@ -8,6 +8,8 @@
     margin-bottom: 1em;
     background: var(--primary-bg-color);
     border-radius: 1em;
+    border: 1px solid #818181;
+    margin: 1em 0;
 }
 nav{
     display: flex;

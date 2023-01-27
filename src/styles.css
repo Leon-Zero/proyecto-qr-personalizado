@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 0;
 }
 *::before, *::after{
   margin: 0;
@@ -13,11 +12,10 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
-  display: inline-block;
 }
 
 body {
+font-family: "Roboto", sans-serif;
 width: 100%;
 min-height: 100vh;
 line-height: 1.4;
@@ -25,7 +23,6 @@ background-color: #e8e8e8;
 }
 
 :root {  
-    --QRsizing: 198px;
     --primary-bg-color: #b8bcd5;
     --primary-color: #2a3780;
     --text-color: #ffffff;

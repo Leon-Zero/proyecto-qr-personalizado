@@ -13,6 +13,9 @@ export class QrTypeFormComponent implements OnInit {
   type: string = "url"
 
   ngOnInit(): void {
+    this.qrService.observableType.subscribe(response =>{
+      this.type = response;
+    });
   }
 
   sendType(type: string) {
