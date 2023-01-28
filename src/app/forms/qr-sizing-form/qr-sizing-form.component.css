@@ -63,6 +63,12 @@ label{
 #hidden{
   display: none;
 }
+#hidden-2{
+  display: none;
+}
+#qr-hidden{
+  display: none;
+}
 
    /* diseño responsive  */
 @media only screen and (max-width: 930px){
@@ -87,4 +93,14 @@ label{
   #control-responsive{
     display: none;
   }
+}
+
+@media only screen and (max-width: 430px){
+  #hidden, #qr-responsive{
+    display: none;
+  }
+  #hidden-2, #qr-hidden{
+    display: inline;
+  }
+
 }

@@ -176,4 +176,19 @@ fill: #eee;
        .btn:hover::after {
         transform: scaleX(1.2) scaleY(1.2);
        }
+       .btn-clean{
+        font-size: 14px;
+       }
+       .btn-clean .text {
+        transform: translateX(35px);
+        font-weight: 600;
+        }
+  }
+  @media only screen and (max-width: 430px){
+    #contentQR{
+        width: 35em;
+        height: 35em;
+        border: 2px dashed rgba(27, 26, 26, 0.603);
+        margin: 0;
+    }
   }

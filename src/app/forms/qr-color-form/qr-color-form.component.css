@@ -1,10 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-}
 form{
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -12,8 +6,9 @@ form{
     gap: 10px;
 }
 .wraping{
-display: inline-block;
+display: flex;
 margin: 2em 0;
+width: 100%;
 }
 .input-color{
     width: 70px;
@@ -72,4 +67,16 @@ margin: 2em 0;
     background-color: #dbdbb4;
     border-radius: 100px 10px / 120px;
     transform: rotate(-134deg);
+  }
+
+
+  /* diseño responsive  */
+  @media only screen and (max-width: 530px){
+    .container-node{
+      flex-flow: column;
+      margin: 0;
+      transform: scale(.8);
+      width: 300px;
+      background: linear-gradient(to bottom,#e8e8e8 50%, #212121 50%);
+    }
   }

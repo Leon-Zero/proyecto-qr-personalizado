@@ -88,3 +88,9 @@ margin: 0 auto;
         padding: 5px 10px 5px 10px;
       }
 }
+@media only screen and (max-width: 430px){
+  #coordenadas-link{
+    width: 200px;
+  }
+
+}

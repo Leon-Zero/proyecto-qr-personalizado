@@ -336,8 +336,11 @@ width: 7em;
    /* diseño responsive  */
    @media only screen and (max-width: 530px){      
     .accordion-panel {
-        padding: 0 1.5rem;
-        width: 42rem;
-        margin-bottom: 5px;
+        width: 40rem;
     }
    }
+   @media only screen and (max-width: 430px){      
+    .accordion-panel {
+        width: 32rem;
+    }
+}

@@ -124,6 +124,16 @@ position: relative;
         width: 15.2em;
         position: relative;
         left: .1em;
+    }   
+}
+
+@media only screen and (max-width: 530px){
+    .input-vcard, #col__v-notas, #v-nacimiento{
+        width: 150px;
     }
-   
+}
+@media only screen and (max-width: 430px){
+    .input-vcard, #col__v-notas, #v-nacimiento{
+        width: 130px;
+    }
 }

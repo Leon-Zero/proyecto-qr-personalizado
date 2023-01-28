@@ -1,5 +1,5 @@
 div{
-    font-size:8px;
+    font-size:10px;
 }
 span{
     display: flex;
@@ -27,13 +27,13 @@ span{
     color: #1DA1F2;
 }
 .instagram{
-    color: #f8f4f4;
+    color: #f1f1f1;
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
     border-radius: 30%;
 
 }
 .facebook{
-    color: #f8f4f4 ;
+    color: #f1f1f1 ;
     background-color: #4267B2;
     border-radius: 50%;
     height: 1.2em;
@@ -42,46 +42,46 @@ span{
 }
 .linkedin{
     color: #0e76a8;
-    background-color: #f8f4f4;
+    background-color: #f1f1f1;
     border-radius: 25%;
     width: .8em;
     height: .8em;
 }
 .youtube{
     color: #FF0000;
-    background-color: #f8f4f4;
+    background-color: #f1f1f1;
     width: .7em;
     height: .6em;
 }
 .discord{
-    color: #f8f4f4;
+    color: #f1f1f1;
     background-color: #5865F2;
     border-radius: 50%;
     height: 1.4em;
     width: 1.4em;
 }
 .tiktok{
-    color: #f8f4f4;
+    color: #f1f1f1;
     background-color: #111111;
     border-radius: 50%;
     height: 1.2em;
     width: 1.2em;
 }
 .steam{
-    color: #f8f4f4;
+    color: #f1f1f1;
     background:linear-gradient(120deg, #00adee, #000000);;
     border-radius: 25%;
     padding-right: .34em;
 }
 .github{
     color: #000000;
-    background-color: #f8f4f4;
+    background-color: #f1f1f1;
     border-radius: 50%;
     width: .95em;
     height: .95em;
 }
 .pdf{
-    color: #f8f4f4;
+    color: #f1f1f1;
     background-color: #FF0000;
     width: 1em;
     height: 1.3em;
@@ -120,7 +120,7 @@ span{
 }
 .bitcoin{
     color: #f2a900;
-    background-color: #f8f4f4;
+    background-color: #f1f1f1;
     border-radius: 50%;
     width: .9em;
     height: .9em;
@@ -135,14 +135,50 @@ span{
 }
 .telegram{
     color:#1C96D1;
-    background-color: #f8f4f4;
+    background-color: #f1f1f1;
     width: .8em;
     height: .8em;
     border-radius: 50%;
 }
 .blogger{
     color: #FF6F00;
-    background-color: #f8f4f4;
+    background-color: #f1f1f1;
     width: .8em;
     height: .8em;
+}
+.dolar{
+    color: rgb(16, 99, 16);
+    background-color: #8da789;
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+}
+.coins{
+    color: rgb(245, 209, 7);
+    background-color: #8f8953;
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+}
+.mercado-pago{
+    background-image: url('src/assets/imagenes/icons8-mercado-pago-240.svg');
+    background-size: 1.4em, 1.4em;
+    background-repeat: none;
+    width: 1.4em;
+    height: 1.4em;
+    object-fit: cover;
+}
+.snapchat{
+    color: #FFFC00;
+    background-color: #111111;
+    width: .8em;
+    height: .8em;
+    border-radius: .2em;
+}
+.twitch{
+    background-color: #6441A4;
+    width: 1.4em;
+    height: 1.4em;
+    padding-top: .35em;
+    border-radius: 50%;
 }
