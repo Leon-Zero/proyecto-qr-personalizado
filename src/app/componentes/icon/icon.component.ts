@@ -12,7 +12,7 @@ export class IconComponent implements OnInit {
   constructor( private qrService: QrValuesService ) { }
   
   icono: string= "";
-  sizeIcon: number= 6;
+  sizeIcon: number= 5;
 
 
   ngOnInit(): void { 

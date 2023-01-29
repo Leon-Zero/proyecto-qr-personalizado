@@ -2,10 +2,21 @@ form{
     width: 100%;
     height: 100%;
     margin: 2em 0;
+    display: grid;
+    place-items: center;
 }
 fieldset{
-    margin: 10px 20px;
+    margin: 10px auto;
     padding: 10px;
+    min-width: 200px;
+    display: grid;
+    place-items: center;
+}
+i{
+    transform: scale(2);
+}
+fieldset:hover i{
+    color: #2587be;
 }
 input{
     position: absolute;
@@ -33,4 +44,22 @@ img{
 h2{
     margin: 0 .5em;
 }
+.btn {
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    text-shadow: 0px 0px 2px #102e1c;
+    font-family: Georgia;
+    color: #fcfcfc;
+    font-size: 18px;
+    background: #b8bcd5;
+    padding: 10px 20px 10px 20px;
+    border: solid #89959c 1px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #c00c0c;
+    text-decoration: none;
+  }
 

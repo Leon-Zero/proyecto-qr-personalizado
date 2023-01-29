@@ -17,4 +17,9 @@ export class AcordionComponent implements OnInit {
       this.type = response;
     });
   }
+
+  clearIcon(){
+    this.qrService.sendIcon('');
+    this.qrService.sendSizeIcon(5);
+  }
 }

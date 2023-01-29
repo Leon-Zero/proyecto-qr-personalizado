@@ -7,15 +7,26 @@ import { QrValuesService } from 'src/app/servicios/qr-values.service';
   styleUrls: ['./qr-wraping-form.component.css']
 })
 export class QrWrapingFormComponent implements OnInit {
+
+  setField: number = 0;
   wraping = "not_selection";
   wrapingClass = {
-    "wraping": [
-      { "name": "not_selection" }, { "name": "party" }, { "name": "neon" }, { "name": "movil" },
-      { "name": "rabbit" }, { "name": "ciervo" }, { "name": "lobo" }, { "name": "oso_pardo" }, { "name": "pinguino" }, { "name": "pig" },
-      { "name": "dog" }, { "name": "mapache" }, { "name": "laser" }, { "name": "china" },
-      { "name": "video" }, { "name": "road" }, { "name": "scan" }, { "name": "colors" },
-      { "name": "estambre" }, { "name": "bear" }, { "name": "black-ig" }, { "name": "twitter" },
-      { "name": "shop" }, { "name": "dinner" }
+    "clasico": [
+      { "name": "movil" }, 
+    ],
+    "moderno": [
+      { "name": "party" }, { "name": "neon" }, { "name": "scan" }, { "name": "colors" }, { "name": "china" },
+      { "name": "laser" }, { "name": "estambre" }, { "name": "black-ig" }, { "name": "twitter" }, { "name": "video" },
+
+    ],
+    "animales": [
+      { "name": "rabbit" }, { "name": "ciervo" }, { "name": "lobo" }, { "name": "oso_pardo" },
+      { "name": "pinguino" }, { "name": "pig" }, { "name": "dog" }, { "name": "mapache" },
+      { "name": "bear" },
+      
+    ],
+    "dibujo": [
+      { "name": "shop" }, { "name": "dinner" }, { "name": "game" }, { "name": "road" }
     ]
   }
 
@@ -28,10 +39,6 @@ export class QrWrapingFormComponent implements OnInit {
   }
 
   sendWraping(wraping: string) {
-    if (wraping === "not_selection") {
-      this.qrService.sendWraping(wraping);
-      this.qrService.sendSizeWrap(15);
-    }
     if (this.qrService.sizeWrapValue > 26) {
       this.qrService.sendWraping(wraping);
     } else {
@@ -40,4 +47,12 @@ export class QrWrapingFormComponent implements OnInit {
     }
   }
 
+  onField(select: number){
+    this.setField = select;
+  }
+
+  clearWrap(){
+      this.qrService.sendWraping('not_selection');
+      this.qrService.sendSizeWrap(15);
+    }
 }

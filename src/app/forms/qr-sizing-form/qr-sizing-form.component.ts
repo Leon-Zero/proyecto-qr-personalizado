@@ -11,7 +11,7 @@ export class QrSizingFormComponent implements OnInit {
   constructor(public qrService: QrValuesService) { }
 
   width: number = 150;
-  sizeIcon: number = 6;
+  sizeIcon: number = 5;
   sizeWrap: number = 20;
 
   ngOnInit(): void {

@@ -111,6 +111,26 @@ app-qr-color-form, app-qr-sizing-form, app-social, app-plataform, app-devs, app-
     display: flex;
     margin: 0 auto;
 }
+
+.btn {
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    text-shadow: 0px 0px 2px #102e1c;
+    font-family: Georgia;
+    color: #fcfcfc;
+    font-size: 18px;
+    background: #b8bcd5;
+    padding: 10px 20px 10px 20px;
+    border: solid #89959c 1px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #c00c0c;
+    text-decoration: none;
+  }
+
 /* Icono color animación  */
 .contenedor{
     display: flex;

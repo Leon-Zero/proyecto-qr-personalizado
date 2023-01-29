@@ -1,15 +1,57 @@
-<form>
-    <fieldset>
-      <legend><h2>Escoja un marco para el QR</h2></legend>
-      <div class="row">
-        <div class="wrap-qr-body" >
-            <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.wraping">
-                <input [(ngModel)]="wraping" type="radio" [name]=" 'wraping__' + wrap.name "
-                [value]="wrap.name" (change)="sendWraping(wraping)" >
-                <img [src]=" './assets/img_wrap/' + wrap.name + '.png' " alt="wrap preview">
+<form  (ngSubmit)="clearWrap()" >
+    <button type="submit" class="btn">Borrar Marco</button>
+
+    <fieldset (click)="onField(0)" >
+      <legend><h2>Estilo moderno</h2></legend>
+      <i *ngIf="setField !== 0" class="fa-solid fa-angles-down open"></i>
+      <div class="row" *ngIf="setField === 0" >
+            <div class="wrap-qr-body" >
+                <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.moderno">
+                    <input [(ngModel)]="wraping" type="radio" [name]=" 'wraping__' + wrap.name "
+                    [value]="wrap.name" (change)="sendWraping(wraping)" >
+                    <img [src]=" './assets/img_wrap/' + wrap.name + '.png' " alt="wrap preview">
+                </div>
             </div>
         </div>
-    </div>
     </fieldset>
+    <fieldset (click)="onField(1)" >
+        <legend><h2>Marcos de animales</h2></legend>
+        <i *ngIf="setField !== 1" class="fa-solid fa-angles-down open"></i>
+        <div class="row" *ngIf="setField === 1" >
+              <div class="wrap-qr-body" >
+                  <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.animales">
+                      <input [(ngModel)]="wraping" type="radio" [name]=" 'wraping__' + wrap.name "
+                      [value]="wrap.name" (change)="sendWraping(wraping)" >
+                      <img [src]=" './assets/img_wrap/' + wrap.name + '.png' " alt="wrap preview">
+                  </div>
+              </div>
+          </div>
+      </fieldset>
+      <fieldset (click)="onField(2)" >
+        <legend ><h2>Estilo clásico</h2></legend>
+        <i *ngIf="setField !== 2" class="fa-solid fa-angles-down open"></i>
+        <div class="row"  *ngIf="setField === 2" >
+              <div class="wrap-qr-body" >
+                  <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.clasico">
+                      <input [(ngModel)]="wraping" type="radio" [name]=" 'wraping__' + wrap.name "
+                      [value]="wrap.name" (change)="sendWraping(wraping)" >
+                      <img [src]=" './assets/img_wrap/' + wrap.name + '.png' " alt="wrap preview">
+                  </div>
+              </div>
+          </div>
+      </fieldset>
+      <fieldset (click)="onField(4)">
+        <legend ><h2>Estilo de dibujo</h2></legend>
+        <i *ngIf="setField !== 4" class="fa-solid fa-angles-down open"></i>
+        <div class="row"  *ngIf="setField === 4" >
+              <div class="wrap-qr-body" >
+                  <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.dibujo">
+                      <input [(ngModel)]="wraping" type="radio" [name]=" 'wraping__' + wrap.name "
+                      [value]="wrap.name" (change)="sendWraping(wraping)" >
+                      <img [src]=" './assets/img_wrap/' + wrap.name + '.png' " alt="wrap preview">
+                  </div>
+              </div>
+          </div>
+      </fieldset>
  </form>
   
