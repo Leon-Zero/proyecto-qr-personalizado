@@ -25,9 +25,7 @@ img{
     left: .1em;
 }
 .rabbit{
-    z-index: -1;
-    top: -.2em;
-    left: .1em;
+    z-index: 1000;
 }
 .laser{
     z-index: 1000;
@@ -42,6 +40,7 @@ img{
 }
 .road{
     z-index: 1000;
+    left: -.2em;
 }
 .scan{
     z-index: 1000;
@@ -65,4 +64,34 @@ img{
     z-index: -1;
     top: -.05em;
     left: -.05em;
+}
+.ciervo{
+    z-index: 1000;
+}
+.lobo{
+    z-index: 1000;
+}
+.oso_pardo{
+    z-index: 1000;
+}
+.pinguino{
+    z-index: -1;
+}
+.pig{
+    z-index: -1;
+}
+.dog{
+    z-index: -1;
+}
+.mapache{
+    z-index: -1;
+}
+.twitter{
+    z-index: -1;
+}
+.shop{
+    z-index:-1;
+}
+.dinner{
+    z-index: -1;
 }

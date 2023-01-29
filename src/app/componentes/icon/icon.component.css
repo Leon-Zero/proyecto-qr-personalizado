@@ -147,15 +147,15 @@ span{
     height: .8em;
 }
 .dolar{
-    color: rgb(16, 99, 16);
-    background-color: #8da789;
+    color: rgb(9, 170, 9);
+    background-color: #a7d4a0;
     width: 1.4em;
     height: 1.4em;
     border-radius: 50%;
 }
 .coins{
-    color: rgb(245, 209, 7);
-    background-color: #8f8953;
+    color: rgb(232, 248, 5);
+    background-color: #b8b8b8;
     width: 1.4em;
     height: 1.4em;
     border-radius: 50%;
@@ -180,5 +180,36 @@ span{
     width: 1.4em;
     height: 1.4em;
     padding-top: .35em;
+    border-radius: 50%;
+}
+.gps{
+    color: rgb(230, 53, 9);
+    background-color: #f1f1f1;
+    width: .6em;
+    height: .6em;
+    border-radius: 50%;
+}
+.restaurante{
+    color: rgb(126, 146, 144);
+}
+.pregunta{
+    color:rgb(3, 6, 168);
+    background-color: #f1f1f1;
+    width: .9em;
+    height: .9em;
+    border-radius: 50%;
+}
+.line{
+    color: #06C755;
+    background-color: #f1f1f1;
+    width: .8em;
+    height: .8em;
+    border-radius: .3em;
+}
+.pinterest{
+    color: #E60023;
+    background-color: white;
+    width: .95em;
+    height: .95em;
     border-radius: 50%;
 }
