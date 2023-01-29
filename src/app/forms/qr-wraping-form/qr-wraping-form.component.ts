@@ -10,6 +10,7 @@ export class QrWrapingFormComponent implements OnInit {
 
   setField: number = 0;
   wraping = "not_selection";
+  valSize: number = 150;
   wrapingClass = {
     "clasico": [
       { "name": "movil" }, 
@@ -22,11 +23,11 @@ export class QrWrapingFormComponent implements OnInit {
     "animales": [
       { "name": "rabbit" }, { "name": "ciervo" }, { "name": "lobo" }, { "name": "oso_pardo" },
       { "name": "pinguino" }, { "name": "pig" }, { "name": "dog" }, { "name": "mapache" },
-      { "name": "bear" },
+      { "name": "bear" }, { "name": "cat" },
       
     ],
     "dibujo": [
-      { "name": "shop" }, { "name": "dinner" }, { "name": "game" }, { "name": "road" }
+      { "name": "shop" }, { "name": "dinner" }, { "name": "game" }, { "name": "energy" }, { "name": "universe" }, { "name": "road" }
     ]
   }
 
@@ -36,15 +37,15 @@ export class QrWrapingFormComponent implements OnInit {
     this.qrService.observableWraping.subscribe(response => {
       this.wraping = response;
     });
+    this.qrService.observableWidth.subscribe(response => {
+      this.valSize = response;
+    });
   }
 
   sendWraping(wraping: string) {
-    if (this.qrService.sizeWrapValue > 26) {
+    var calcSize= (this.valSize /10) + 10;
       this.qrService.sendWraping(wraping);
-    } else {
-      this.qrService.sendWraping(wraping);
-      this.qrService.sendSizeWrap(26);
-    }
+      this.qrService.sendSizeWrap(calcSize);
   }
 
   onField(select: number){

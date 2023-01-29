@@ -98,3 +98,12 @@ img{
 .game{
     z-index: -1;
 }
+.energy{
+    z-index: 1000;
+}
+.universe{
+    z-index: 1000;
+}
+.cat{
+    z-index: 1000;
+}
