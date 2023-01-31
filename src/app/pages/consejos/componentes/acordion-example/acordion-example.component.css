@@ -94,6 +94,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-flow: row nowrap;
+    padding: 0 1.5em;
 }
 .contenedor ul li span #brush{
     color:#126ef8;
@@ -156,16 +157,16 @@ width: 7em;
         column-gap: 12px;
         font-size: 14px;
     }
+    .accordion-body{
+        padding: 0 2em;
+    }
     .accordion-body p{
         font-size: 15px;
     }
     .accordion-body ul li{
         font-size: 15px;
-        font-family:"Roboto", sans-serif;
-        color: rgb(0, 0, 5);
     }
     .contenedor ul li span #brush{
-        color:#126ef8;
         font-size: 18px;
     }
     .span-icon{
@@ -174,12 +175,19 @@ width: 7em;
     
     #icons, #wrap-icon, #size-icon, #option-icon, #brush{
         font-size: 18px;
-        display: flex;
-        color: #126ef8;
     }  
    }
-   @media only screen and (max-width: 590px){    
+   @media only screen and (max-width: 600px){    
     .accordion-panel {
-        padding: .5em 2em;
-    }    
+        padding: 0 2.5em;
+    }
+    .accordion-body p{
+        font-size: 12px;
+    }
+    .accordion-body{
+        padding: 0;
+    }
+    .accordion-body ul li{
+        font-size: 12px;
+    }
 }

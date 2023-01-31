@@ -47,7 +47,7 @@ section{
     align-items: center;
     gap: 2em;
     flex-flow: column nowrap;
-    padding: 0;
+    padding: 3em;
 }
 .view{
     display: flex;
@@ -79,6 +79,7 @@ article .view .consejo p{
     text-align: justify;
     width: 90vw;
     padding: 0;
+    padding: 2em;
 }
 
  /* diseño responsive  */
@@ -92,4 +93,15 @@ article .view .consejo p{
     article .view .consejo p{
         font-size: 12px;
     }   
+ }
+ @media only screen and (max-width: 530px){
+    section{
+        padding: 1em;
+    }
+    h3{
+        font-size: 12px;
+    }
+    article .view .consejo p{
+        padding: 1em;
+    } 
  }

@@ -119,4 +119,38 @@
         grid-row-gap: 5px;
         padding: .2em;
     } 
+    .explanation p{
+        font-size: 14px;
+        padding: .5em;
+        min-height: 5em;
+     }
+ }
+ @media only screen and (max-width: 500px){
+    .content{
+        width: 30em;
+        min-height: 30em;
+        border: 3px dashed rgba(27, 26, 26, 0.603);
+    }
+    #flex-consejo ul{
+        width: 29em;
+        padding: 1.5em 1em; 
+        gap: 1.5em;
+    }
+    #flex-consejo ul li{
+        font-size: 14px;
+        height: 1.8em;
+        margin: .7em 0 0 1.6em;
+        padding: 0 1.8em;
+        gap: 2em;
+    }
+    .list-style{
+        font-size: 1.1em;
+        top: -.9em;
+        left: -.7em;
+    }
+    .explanation p{
+        font-size: 12px;
+        padding: .3em;
+        min-height: 3.8em;
+     }
  }

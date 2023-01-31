@@ -3,7 +3,9 @@
 
     <fieldset (click)="onField(0)" >
       <legend><h2>Estilo moderno</h2></legend>
-      <i *ngIf="setField !== 0" class="fa-solid fa-angles-down open"></i>
+      <div class="icon-field" *ngIf="setField !== 0">
+          <i  class="fa-solid fa-angles-down open"></i>
+        </div>
       <div class="row" *ngIf="setField === 0" >
             <div class="wrap-qr-body" >
                 <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.moderno">
@@ -16,7 +18,9 @@
     </fieldset>
     <fieldset (click)="onField(1)" >
         <legend><h2>Marcos de animales</h2></legend>
-        <i *ngIf="setField !== 1" class="fa-solid fa-angles-down open"></i>
+        <div class="icon-field" *ngIf="setField !== 1">
+            <i  class="fa-solid fa-angles-down open"></i>
+        </div>
         <div class="row" *ngIf="setField === 1" >
               <div class="wrap-qr-body" >
                   <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.animales">
@@ -28,8 +32,10 @@
           </div>
       </fieldset>
       <fieldset (click)="onField(2)" >
-        <legend ><h2>Estilo clásico</h2></legend>
-        <i *ngIf="setField !== 2" class="fa-solid fa-angles-down open"></i>
+        <legend ><h2>Diseños clásicos</h2></legend>
+        <div class="icon-field" *ngIf="setField !== 2">
+            <i  class="fa-solid fa-angles-down open"></i>
+        </div>
         <div class="row"  *ngIf="setField === 2" >
               <div class="wrap-qr-body" >
                   <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.clasico">
@@ -42,7 +48,9 @@
       </fieldset>
       <fieldset (click)="onField(4)">
         <legend ><h2>Estilo de dibujo</h2></legend>
-        <i *ngIf="setField !== 4" class="fa-solid fa-angles-down open"></i>
+        <div class="icon-field" *ngIf="setField !== 4">
+            <i  class="fa-solid fa-angles-down open"></i>
+        </div>
         <div class="row"  *ngIf="setField === 4" >
               <div class="wrap-qr-body" >
                   <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.dibujo">

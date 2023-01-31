@@ -13,11 +13,13 @@ export class QrWrapingFormComponent implements OnInit {
   valSize: number = 150;
   wrapingClass = {
     "clasico": [
-      { "name": "movil" }, 
+      { "name": "movil" }, {"name":"block_cyan"}, {"name":"block_pink"}, {"name":"block_violet"}, {"name":"ring_salmon"},
+      {"name":"ring_purple"}, {"name":"ring_blue"}, {"name":"ring_cyan"}, {"name":"memo_pink"}, {"name":"memo_yellow"},
+      {"name":"memo_blue"}, {"name":"memo_cyan"}
     ],
     "moderno": [
       { "name": "party" }, { "name": "neon" }, { "name": "scan" }, { "name": "colors" }, { "name": "china" },
-      { "name": "laser" }, { "name": "estambre" }, { "name": "black-ig" }, { "name": "twitter" }, { "name": "video" },
+      { "name": "laser" }, { "name": "estambre" }, { "name": "black-ig" }, { "name": "twitter" },
 
     ],
     "animales": [
@@ -27,7 +29,8 @@ export class QrWrapingFormComponent implements OnInit {
       
     ],
     "dibujo": [
-      { "name": "shop" }, { "name": "dinner" }, { "name": "game" }, { "name": "energy" }, { "name": "universe" }, { "name": "road" }
+      { "name": "shop" }, { "name": "dinner" }, { "name": "game" }, { "name": "energy" },
+       { "name": "universe" }, { "name": "road" }, { "name": "park" }, { "name": "clipboard" }, { "name": "city" }
     ]
   }
 

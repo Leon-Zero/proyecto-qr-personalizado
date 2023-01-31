@@ -6,15 +6,34 @@ import { Injectable } from '@angular/core';
 export class CargarScriptService {
 
   constructor() { }
-  
-  carga(archivos:string[]){
-    for( let archivo of archivos){
-      let script = document.createElement("script");
-      script.src = "./assets/jscript_dropmenu/" + archivos + ".js";
-      script.type = "text/javascript";
-      script.async = true;
-      let body = document.getElementsByTagName("head")[0];
-      body.appendChild( script );
+
+	public loadScript(id: string, url: string) {
+        return new Promise((resolve, reject) => {
+        if(id && document.getElementById(id)) {
+            resolve({id: id, loaded: true, status: 'Already Loaded'});
+        }
+        let body =  document.body;
+        let script = document.createElement('script');
+        script.src = "./assets/jscript_dropmenu/" + url + ".js";
+        script.type = 'text/javascript';
+        script.innerHTML = '';
+        script.id = id;
+        script.onload =() => {
+            resolve({id: id, loaded: true, status: 'Loaded'});
+        };
+        script.onerror = (error: any) => resolve({id: id, loaded: false, status: 'Loaded'});
+        script.async = true;
+        script.defer = true;
+        body.appendChild(script);
+    });
     }
-  }
+
+    public removeScript(id: string) {
+        let script = document.getElementById(id);
+        if(script) {
+            script.remove();
+            console.log('se ha destruido el script '+ id);
+        }
+    }
+
 }

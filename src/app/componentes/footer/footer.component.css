@@ -1,5 +1,6 @@
 footer{
     max-width: 100%;
+    max-height: auto;
     margin-top: 3em;
     box-sizing: border-box;
     padding: 1.5em 3em;
@@ -190,13 +191,8 @@ footer .parent .div3 a:hover span{
 
   /* diseño responsive  */
   @media only screen and (max-width: 930px){
-    footer{
-      margin-top: 1rem;
-      padding: .5rem 1.5rem;
-  }
   .parent {
       grid-column-gap: 5px;
-      margin-bottom: .5em;
       }
       .div1 { 
           gap: .5em;

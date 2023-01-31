@@ -2,13 +2,13 @@
     <form>
         <div id="qr-responsive" class="container">
             <label for="width">Tamaño QR ({{width * 2 + 'px'}})</label>
-            <input id="width" class="input-range" type="range" name="width" min="150" max="400" step="1"
+            <input id="width" class="input-range" type="range" name="width" min="100" max="400" step="1"
             [(ngModel)]="width" (input)="sendWidth(width)" valueAsNumber>
         </div>
         <!-- copia responsiva desde tamaño 430-->
         <div id="qr-hidden" class="container">
             <label for="width-hidden">Tamaño QR ({{width * 2 + 'px'}})</label>
-            <input id="width-hidden" class="input-range" type="range" name="width" min="150" max="350" step="1"
+            <input id="width-hidden" class="input-range" type="range" name="width" min="100" max="300" step="1"
             [(ngModel)]="width" (input)="sendWidth(width)" valueAsNumber>
         </div>
         <!-- copia responsiva desde tamaño 430-->
@@ -16,7 +16,7 @@
 
         <div class="container">
             <label for="size-icon">Tamaño Icono ({{sizeIcon}}) </label>
-            <input id="size-icon" class="input-range" type="range" name="size-icon" min="4" max="10" step="1"
+            <input id="size-icon" class="input-range" type="range" name="size-icon" min="2" max="10" step="1"
             [(ngModel)]="sizeIcon" (input)="sendSizeIcon(sizeIcon)" valueAsNumber>
         </div>
 
