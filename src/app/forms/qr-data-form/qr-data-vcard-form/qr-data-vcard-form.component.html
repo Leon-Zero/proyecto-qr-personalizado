@@ -4,7 +4,7 @@
         <div class="container">
             <div class="input-group">
                 <div class="col">
-                    <label for="v-nombre">Nombre</label>
+                    <label for="v-nombre">Nombre <small>(*)</small></label>
                     <input type="text" name="v-nombre" id="v-nombre" class="input-vcard"
                     [(ngModel)]="nombre" (change)="nombreValue(nombre)" required>
                 </div>
@@ -116,7 +116,7 @@
                 <div class="col" id="col__v-notas">
                     <label for="v-notas">Notas</label>
                     <textarea  type="text" name="v-notas" id="v-notas" class="input-vcard" 
-                    [(ngModel)]="notas" (input)="notasValue(notas)" rows="5" maxlength="250" >
+                    [(ngModel)]="notas" (input)="notasValue(notas)" rows="5" maxlength="250" maxlength="200">
                     </textarea>
                 </div>
                 <div class="col">
@@ -148,6 +148,7 @@
         </div>
         
         <button type="submit" class="btn">Generar QR</button>
+        <strong>(*) Campos Requeridos</strong>
 
     </form>
 </div>

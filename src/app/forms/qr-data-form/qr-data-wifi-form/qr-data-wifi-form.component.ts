@@ -41,8 +41,13 @@ export class QrDataWifiFormComponent implements OnInit {
     }
   }
   sendWifi() {
-    this.wifiFormat = "WIFI:S:" + this.ssid + ";T:" + this.typeEncryption + ";P:" + this.password + ";" + this.hidden + ";";
-    this.qrService.sendUrl(this.wifiFormat);
+    if (this.ssid && this.typeEncryption && this.password !== "") {
+      this.wifiFormat = "WIFI:S:" + this.ssid + ";T:" + this.typeEncryption + ";P:" + this.password + ";" + this.hidden + ";";
+      this.qrService.sendUrl(this.wifiFormat);      
+    } else{
+      alert(' (*) Capos requeridos sin completar')
+    }
+   
   }
   changeVisibility(){
     this.passVisible = !this.passVisible

@@ -91,7 +91,8 @@ export class QrDataVcardFormComponent implements OnInit {
   }
 
   sendVCard() {
-    this.vCardFormat = "BEGIN:VCARD" +
+    if (this.nombre !== "") {
+      this.vCardFormat = "BEGIN:VCARD" +
       "\nVERSION:3.0";
     if (this.apellido !== "") {
       this.vCardFormat += "\nN:" + this.apellido + ";";
@@ -165,5 +166,11 @@ export class QrDataVcardFormComponent implements OnInit {
     console.log(this.vCardFormat);
     this.qrService.sendUrl(this.vCardFormat);
   }
+  else{
+    alert('El campo Nombre* es requerido')
+  }
+      
+    }
+    
 
 }

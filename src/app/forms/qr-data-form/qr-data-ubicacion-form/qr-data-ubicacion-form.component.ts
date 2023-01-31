@@ -10,8 +10,8 @@ export class QrDataUbicacionFormComponent implements OnInit {
 
   constructor(public qrService: QrValuesService) { }
 
-  latitud!: number;
-  longitud!: number;
+  latitud: number = 0;
+  longitud: number = 0;
   ubication: string = "";
 
 
@@ -25,8 +25,12 @@ export class QrDataUbicacionFormComponent implements OnInit {
     this.longitud = longitud;
   }
   sendUbication(){
-    this.ubication = 'https://maps.google.com/?q=' + this.latitud + ',' + this.longitud;
-    this.qrService.sendUrl(this.ubication);
+    if (this.latitud && this.longitud !== 0 ) {
+      this.ubication = 'https://maps.google.com/?q=' + this.latitud + ',' + this.longitud;
+      this.qrService.sendUrl(this.ubication);
+    } else{
+      alert('(*) Campos Requeridos sin completar')
+    }
   }
 
 }

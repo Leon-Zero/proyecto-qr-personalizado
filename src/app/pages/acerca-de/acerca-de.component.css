@@ -98,3 +98,20 @@ article p{
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+
+
+   /* diseño responsive  */
+  @media only screen and (max-width: 930px){
+ 
+  h3{
+      font-size: 15px;
+  }
+  article p{
+      font-size: 12px;
+      width: 80vw;
+  }
+  .btn {
+      font-size: 14px;
+      padding: 6px 10px 6px 10px;
+    }
+  }

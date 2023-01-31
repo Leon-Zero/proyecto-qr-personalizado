@@ -188,3 +188,9 @@ img {
 .city{
     z-index: -1
 }
+.aqua{
+    z-index: 1000;
+}
+.pearjam{
+    z-index: -1;
+}

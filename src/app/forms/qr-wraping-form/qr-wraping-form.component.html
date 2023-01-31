@@ -11,7 +11,8 @@
                 <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.moderno">
                     <input [(ngModel)]="wraping" type="radio" [name]=" 'wraping__' + wrap.name "
                     [value]="wrap.name" (change)="sendWraping(wraping)" >
-                    <img [src]=" './assets/img_wrap/' + wrap.name + '.png' " alt="wrap preview">
+                    <img [src]=" './assets/img_wrap/' + wrap.name + '.png' " 
+                    [alt]=" wrap.name + 'preview' " [title]="wrap.atribution">
                 </div>
             </div>
         </div>
@@ -26,7 +27,8 @@
                   <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.animales">
                       <input [(ngModel)]="wraping" type="radio" [name]=" 'wraping__' + wrap.name "
                       [value]="wrap.name" (change)="sendWraping(wraping)" >
-                      <img [src]=" './assets/img_wrap/' + wrap.name + '.png' " alt="wrap preview">
+                      <img [src]=" './assets/img_wrap/' + wrap.name + '.png' " 
+                      [alt]=" wrap.name + 'preview' " [title]="wrap.atribution">
                   </div>
               </div>
           </div>
@@ -41,7 +43,8 @@
                   <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.clasico">
                       <input [(ngModel)]="wraping" type="radio" [name]=" 'wraping__' + wrap.name "
                       [value]="wrap.name" (change)="sendWraping(wraping)" >
-                      <img [src]=" './assets/img_wrap/' + wrap.name + '.png' " alt="wrap preview">
+                      <img [src]=" './assets/img_wrap/' + wrap.name + '.png' "
+                      [alt]=" wrap.name + 'preview' " [title]="wrap.atribution">
                   </div>
               </div>
           </div>
@@ -56,7 +59,8 @@
                   <div class="wrap-qr-content" *ngFor="let wrap of wrapingClass.dibujo">
                       <input [(ngModel)]="wraping" type="radio" [name]=" 'wraping__' + wrap.name "
                       [value]="wrap.name" (change)="sendWraping(wraping)" >
-                      <img [src]=" './assets/img_wrap/' + wrap.name + '.png' " alt="wrap preview">
+                      <img [src]=" './assets/img_wrap/' + wrap.name + '.png' " 
+                      [alt]=" wrap.name + 'preview' " [title]="wrap.atribution">
                   </div>
               </div>
           </div>

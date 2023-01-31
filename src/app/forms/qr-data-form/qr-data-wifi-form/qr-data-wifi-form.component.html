@@ -1,13 +1,13 @@
 <div class="wraping">
     <form (ngSubmit)="sendWifi()">
         <div class="container">
-            <label for="input-ssid">SSID/ Nombre de red</label>
+            <label for="input-ssid">SSID/ Nombre de red <small>(*)</small></label>
             <input class="input-wifi" id="input-ssid" type="text" name="ssid" 
             [(ngModel)]="ssid" (input)="ssidValue(ssid)" required>
         </div>
 
         <div class="container">
-            <label for="encryption">Cifrado</label>
+            <label for="encryption">Cifrado <small>(*)</small></label>
             <div class="input-group">
                 <select [(ngModel)]="typeEncryption" name="encryption" id="encryption" class="input-wifi"
                 (change)="typeEncryptionValue(typeEncryption)"  required>
@@ -19,7 +19,7 @@
         </div>
 
         <div class="container">
-            <label for="password"><span class="fa-solid fa-key"></span> Contraseña</label>
+            <label for="password"><span class="fa-solid fa-key"></span>Contraseña <small>(*)</small></label>
             <div class="input-group">
                 <input class="input-wifi" [type]="passVisible? 'text' : 'password' " id="password" name="password"
                 [(ngModel)]="password" (input)="passwordValue(password)" required>
@@ -38,6 +38,9 @@
         </div>
 
         <button type="submit" class="btn">Generar QR</button>
+
+        <strong>(*) Campos Requeridos</strong>
+
 
     </form>
 </div>

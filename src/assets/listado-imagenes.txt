@@ -1,18 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { QrValuesService } from 'src/app/servicios/qr-values.service';
+    CLASICO
 
-@Component({
-  selector: 'app-qr-wraping-form',
-  templateUrl: './qr-wraping-form.component.html',
-  styleUrls: ['./qr-wraping-form.component.css']
-})
-export class QrWrapingFormComponent implements OnInit {
-
-  setField: number = 0;
-  wraping = "not_selection";
-  valSize: number = 150;
-  wrapingClass = {
-    "clasico": [
       { "name": "movil", "atribution": "n/a" },
       { "name": "block_cyan", "atribution": "code PNG Designed By khumbilie from https://pngtree.com/freepng/qr-code-free-download-label-brick-style_6531889.html?sol=downref&id=bef" },
       { "name": "block_pink", "atribution": "code PNG Designed By khumbilie from https://pngtree.com/freepng/qr-code-free-download-label-brick-style_6531889.html?sol=downref&id=bef" },
@@ -25,8 +12,9 @@ export class QrWrapingFormComponent implements OnInit {
       { "name": "memo_yellow", "atribution": "scan PNG Designed By khumbilie from https://pngtree.com/freepng/qr-code-free-download-sticky-note-style_6531891.html?sol=downref&id=bef" },
       { "name": "memo_blue", "atribution": "scan PNG Designed By khumbilie from https://pngtree.com/freepng/qr-code-free-download-sticky-note-style_6531891.html?sol=downref&id=bef" },
       { "name": "memo_cyan", "atribution": "scan PNG Designed By khumbilie from https://pngtree.com/freepng/qr-code-free-download-sticky-note-style_6531891.html?sol=downref&id=bef" }
-    ],
-    "moderno": [
+
+    MODERNO
+
       { "name": "party", "atribution": "línea de personalidad digital PNG diseñado por 588ku de  https://es.pngtree.com/freepng/digital-border-decoration-business-border-business-picture-frame-qr-code_3932776.html?sol=downref&id=bef" },
       { "name": "neon", "atribution": "" },
       { "name": "scan", "atribution": "simple PNG diseñado por 588ku de  https://es.pngtree.com/freepng/scan-qr-code_5404545.html?sol=downref&id=bef" },
@@ -39,8 +27,8 @@ export class QrWrapingFormComponent implements OnInit {
       { "name": "aqua", "atribution": "código qr PNG diseñado por Anna Fillah de  https://es.pngtree.com/freepng/gradient-blue-label-for-qr-code_7586291.html?sol=downref&id=bef" },
       { "name": "pearjam", "atribution": "abstract PNG Designed By 姳久 from https://pngtree.com/freepng/abstract-geometric-colored-fluid-gradient-border_5374805.html?sol=downref&id=bef" }
 
-    ],
-    "animales": [
+    ANIMALES
+
       { "name": "rabbit", "atribution": "borde morado PNG diseñado por 588ku de  https://es.pngtree.com/freepng/purple-qr-code-border_4685663.html?sol=downref&id=bef" },
       { "name": "ciervo", "atribution": "cartoon PNG Designed By Dr_J from https://pngtree.com/freepng/cartoon-cute-little-animal-avatar-colorful-label-border-photo-frame_6494256.html?sol=downref&id=bef" },
       { "name": "lobo", "atribution": "cartoon PNG Designed By Dr_J from https://pngtree.com/freepng/cartoon-cute-little-animal-avatar-colorful-label-border-photo-frame_6494256.html?sol=downref&id=bef" },
@@ -50,10 +38,10 @@ export class QrWrapingFormComponent implements OnInit {
       { "name": "dog", "atribution": "cartoon PNG Designed By Dr_J from https://pngtree.com/freepng/cartoon-cute-animal-square-label-border-photo-frame_6494252.html?sol=downref&id=bef" },
       { "name": "mapache", "atribution": "cartoon PNG Designed By Dr_J from https://pngtree.com/freepng/cartoon-cute-animal-square-label-border-photo-frame_6494252.html?sol=downref&id=bef" },
       { "name": "bear", "atribution": "" },
-      { "name": "cat", "atribution": "qr code PNG Designed By 588ku from https://pngtree.com/freepng/qr-code-design-vector_5412056.html?sol=downref&id=bef" },
+      { "name": "cat", "atribution": "qr code PNG Designed By 588ku from https://pngtree.com/freepng/qr-code-design-vector_5412056.html?sol=downref&id=bef" }
+    
+    DIBUJO
 
-    ],
-    "dibujo": [
       { "name": "shop", "atribution": "qr code PNG Designed By 588ku from https://pngtree.com/freepng/creative-qr-code-vector_5412068.html?sol=downref&id=bef" },
       { "name": "dinner", "atribution": "qr code PNG Designed By 588ku from https://pngtree.com/freepng/creative-qr-code-vector_5412068.html?sol=downref&id=bef" },
       { "name": "game", "atribution": "qr code PNG Designed By 588ku from https://pngtree.com/freepng/creative-qr-code-vector_5412068.html?sol=downref&id=bef" },
@@ -63,32 +51,4 @@ export class QrWrapingFormComponent implements OnInit {
       { "name": "park", "atribution": "qr code PNG Designed By 588ku from https://pngtree.com/freepng/road-qr-code-vector_5412077.html?sol=downref&id=bef" },
       { "name": "clipboard", "atribution": "qr code PNG Designed By 588ku from https://pngtree.com/freepng/road-qr-code-vector_5412077.html?sol=downref&id=bef" },
       { "name": "city", "atribution": "qr code PNG Designed By 588ku from https://pngtree.com/freepng/road-qr-code-vector_5412077.html?sol=downref&id=bef" }
-    ]
-  }
-
-  constructor(public qrService: QrValuesService) { }
-
-  ngOnInit(): void {
-    this.qrService.observableWraping.subscribe(response => {
-      this.wraping = response;
-    });
-    this.qrService.observableWidth.subscribe(response => {
-      this.valSize = response;
-    });
-  }
-
-  sendWraping(wraping: string) {
-    var calcSize = (this.valSize / 10) + 10;
-    this.qrService.sendWraping(wraping);
-    this.qrService.sendSizeWrap(calcSize);
-  }
-
-  onField(select: number) {
-    this.setField = select;
-  }
-
-  clearWrap() {
-    this.qrService.sendWraping('not_selection');
-    this.qrService.sendSizeWrap(15);
-  }
-}
+      
