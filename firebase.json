@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/generador_qr",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

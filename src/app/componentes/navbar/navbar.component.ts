@@ -24,7 +24,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
   }
 
   goQr(){
-    location.replace('http://localhost:4200/');
+    location.replace('https://genex-qr.web.app');
   }
   goAcercaDe(){
     this.ngOnDestroy();
