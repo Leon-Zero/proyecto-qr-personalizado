@@ -37,7 +37,8 @@ export class QrWrapingFormComponent implements OnInit {
       { "name": "black-ig", "atribution": "instagram PNG diseñado por Pugazh Productions de  https://es.pngtree.com/freepng/dark-mood-instagram-post-frame-viral-photo-editing-png_5593972.html?sol=downref&id=bef" },
       { "name": "twitter", "atribution": "foto PNG diseñado por yahya012 de  https://es.pngtree.com/freepng/social-media-photo-frame-template_5339704.html?sol=downref&id=bef" },
       { "name": "aqua", "atribution": "código qr PNG diseñado por Anna Fillah de  https://es.pngtree.com/freepng/gradient-blue-label-for-qr-code_7586291.html?sol=downref&id=bef" },
-      { "name": "pearjam", "atribution": "abstract PNG Designed By 姳久 from https://pngtree.com/freepng/abstract-geometric-colored-fluid-gradient-border_5374805.html?sol=downref&id=bef" }
+      { "name": "pearjam", "atribution": "abstract PNG Designed By 姳久 from https://pngtree.com/freepng/abstract-geometric-colored-fluid-gradient-border_5374805.html?sol=downref&id=bef" },
+      { "name": "buble_cyan", "atribution": ""}
 
     ],
     "animales": [

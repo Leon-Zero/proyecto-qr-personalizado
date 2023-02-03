@@ -1,6 +1,6 @@
 footer{
     max-width: 100%;
-    max-height: auto;
+    min-height: 30vh;
     margin-top: 3em;
     box-sizing: border-box;
     padding: 1.5em 3em;
@@ -10,6 +10,8 @@ footer{
     top: 0;
     left: 0;
     z-index: 5000;
+    display: grid;
+    place-items: center;
 }
 .parent {
     display: grid;

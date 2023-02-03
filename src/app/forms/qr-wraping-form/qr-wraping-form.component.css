@@ -28,15 +28,88 @@ i{
 fieldset:hover i{
     color: #2587be;
 }
+
+/* estilos del input  */
 input{
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: scale(1.5);
-    cursor: pointer;
+    display: none;
 }
+label{
+    position: absolute;
+    z-index: 1000;
+    border-radius: .6em;
+    transition: 0.4s;
+    display: grid;
+    place-items: center;
+}
+
+.mark {
+    border: 1px solid #c8ccd4;
+    transition: background 0.1s ease;
+    cursor: pointer;
+    display: block;
+   }
+   
+   .mark:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    top: 30%;
+    left: 42%;
+    opacity: 0;
+    transform: rotate(45deg) scale(0) translate(-42%, -30%);
+    border-right: 4px solid #3fdb0f;
+    border-bottom: 4px solid #3fdb0f;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+   }
+   
+   input:checked ~ .mark {
+    border-color: transparent;
+    background: #212121bb;
+    animation: jelly 0.6s ease;
+   }
+   
+   input:checked ~ .mark:after {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+   }
+   
+   
+   @keyframes jelly {
+    from {
+     transform: scale(1, 1);
+    }
+   
+    30% {
+     transform: scale(1.25, 0.75);
+    }
+   
+    40% {
+     transform: scale(0.75, 1.25);
+    }
+   
+    50% {
+     transform: scale(1.15, 0.85);
+    }
+   
+    65% {
+     transform: scale(0.95, 1.05);
+    }
+   
+    75% {
+     transform: scale(1.05, 0.95);
+    }
+   
+    to {
+     transform: scale(1, 1);
+    }
+   }
+
 img{
     object-fit: fill;
+    width: 100%;
+    height: 100%;
 }
 .wrap-qr-body{
     display: flex;
@@ -49,9 +122,11 @@ img{
     position: relative;
     width: 80px;
     height: 80px;
-    display: flex;
     margin: 0 auto;
 }
+
+/* ******* */
+
 h2{
     margin: 0 .5em;
 }

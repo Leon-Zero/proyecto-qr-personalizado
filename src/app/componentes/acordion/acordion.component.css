@@ -66,14 +66,6 @@
     color: #2587be;
 }
 
-.accordion .close {
-    display: none;
-}
-
-.accordion input:checked + label .close {
-    display: block;
-}
-
 .accordion input:checked + label .open {
     display: none;
 }

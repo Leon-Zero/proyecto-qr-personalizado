@@ -1,8 +1,7 @@
 .node{
     position: relative;
-    width: 100%;
-    min-height: 800px;
-    max-height: 4000px;
+    max-width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
