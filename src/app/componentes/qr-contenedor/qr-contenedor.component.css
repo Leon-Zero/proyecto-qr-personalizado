@@ -1,44 +1,81 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .wraping{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #contentQR{
     width: 50.4em;
     height: 50.4em;
-    border: 6px dashed rgba(27, 26, 26, 0.603);
+    border: 5px dashed #1b1a1a9a;
     position: relative;
     background-color: rgba(255, 255, 255, 0);
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #capture{
     position: absolute;
-    outline: 6px dashed rgb(91, 240, 91);
+    outline: 4px dashed limegreen;
 }
 .parent {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     place-items: center;
     }
+.parent > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    }
     
-    .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .div2 { grid-area: 1 / 1 / 2 / 2; }
+    .div1 { -ms-grid-row: 1; -ms-grid-row-span: 1; -ms-grid-column: 1; -ms-grid-column-span: 1; grid-area: 1 / 1 / 2 / 2; }
+    .div2 { -ms-grid-row: 1; -ms-grid-row-span: 1; -ms-grid-column: 1; -ms-grid-column-span: 1; grid-area: 1 / 1 / 2 / 2; }
 
 .flex-row{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
 }
 
 .btn {
@@ -50,6 +87,8 @@ width: 150px;
 height: 50px;
 display: inline-block;
 border-radius: 6em;
+-webkit-transition: all .2s;
+-o-transition: all .2s;
 transition: all .2s;
 border: none;
 font-family: "Roboto", sans-serif;
@@ -60,13 +99,19 @@ background-color: #74a6f1b0;
 }
    
    .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
    }
    
    .btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
    }
    
    .btn::after {
@@ -79,6 +124,8 @@ background-color: #74a6f1b0;
     top: 0;
     left: 0;
     z-index: -1;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
     transition: all .4s;
    }
    
@@ -87,7 +134,9 @@ background-color: #74a6f1b0;
    }
    
    .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
+    -webkit-transform: scaleX(1.4) scaleY(1.6);
+        -ms-transform: scaleX(1.4) scaleY(1.6);
+            transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
    }
 
@@ -95,12 +144,17 @@ background-color: #74a6f1b0;
 width: 150px;
 height: 50px;
 cursor: pointer;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-align-items: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 background: red;
 border: none;
 border-radius: 5px;
-box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
 background: #e62222;
 font-size: 17px;
 text-transform: uppercase;
@@ -108,11 +162,15 @@ text-decoration: none;
 }
 
 .btn-clean, .btn-clean span {
+-webkit-transition: 200ms;
+-o-transition: 200ms;
 transition: 200ms;
 }
 
 .btn-clean .text {
-transform: translateX(20px);
+-webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+        transform: translateX(20px);
 color: white;
 font-weight: bold;
 }
@@ -120,9 +178,12 @@ font-weight: bold;
 .btn-clean .icon {
 position: absolute;
 border-left: 1px solid #c41b1b;
-transform: translateX(110px);
+-webkit-transform: translateX(110px);
+    -ms-transform: translateX(110px);
+        transform: translateX(110px);
 height: 40px;
 width: 40px;
+display: -ms-grid;
 display: grid;
 place-items: center;
 }
@@ -144,7 +205,9 @@ fill: #eee;
     .btn-clean:hover .icon {
     width: 150px;
     border-left: none;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
     }
 
     .btn-clean:focus {
@@ -152,7 +215,9 @@ fill: #eee;
     }
 
     .btn-clean:active .icon svg {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
     }
 
 
@@ -171,16 +236,21 @@ fill: #eee;
        }
        
        .btn:hover {
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
        }                     
        .btn:hover::after {
-        transform: scaleX(1.2) scaleY(1.2);
+        -webkit-transform: scaleX(1.2) scaleY(1.2);
+            -ms-transform: scaleX(1.2) scaleY(1.2);
+                transform: scaleX(1.2) scaleY(1.2);
        }
        .btn-clean{
         font-size: 14px;
        }
        .btn-clean .text {
-        transform: translateX(35px);
+        -webkit-transform: translateX(35px);
+            -ms-transform: translateX(35px);
+                transform: translateX(35px);
         font-weight: 600;
         }
   }

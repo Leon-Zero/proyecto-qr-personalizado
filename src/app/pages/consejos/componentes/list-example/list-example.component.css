@@ -47,11 +47,11 @@
     top: -1em;
     left: -.8em;
     transform: rotate(25deg);
-    background-color: #495285;
-    color: rgb(15, 15, 15);
+    background-color: #236fb6;
+    color: #0f0f0f;
     padding: .2em .25em;
     border-radius: .3em;
-    border: rgb(255, 255, 255) 5px solid;
+    border: #fcfafa 3px solid;
     transition: transform ease-in .2s;
 }
 #flex-consejo ul li:hover{
@@ -69,7 +69,7 @@
     display: flex;
     width: 55em;
     min-height: 55em;
-    border: 6px dashed rgba(27, 26, 26, 0.603);
+    border: 5px dashed #1b1a1a9a;
     align-items: center;
     justify-content: center;
 }

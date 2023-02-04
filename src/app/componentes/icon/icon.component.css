@@ -1,15 +1,31 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 div{
     font-size:10px;
 }
 span{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     padding: .2em;
     height: 1em;
     width: 1em;
@@ -28,6 +44,7 @@ span{
 }
 .instagram{
     color: #f1f1f1;
+    background: -o-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
     border-radius: 30%;
 
@@ -69,6 +86,7 @@ span{
 }
 .steam{
     color: #f1f1f1;
+    background:-o-linear-gradient(330deg, #00adee, #000000);
     background:linear-gradient(120deg, #00adee, #000000);;
     border-radius: 25%;
     padding-right: .34em;
@@ -166,7 +184,8 @@ span{
     background-repeat: none;
     width: 1.4em;
     height: 1.4em;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .snapchat{
     color: #FFFC00;

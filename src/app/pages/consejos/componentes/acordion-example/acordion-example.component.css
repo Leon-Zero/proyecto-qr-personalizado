@@ -14,8 +14,8 @@
     padding: 0 6em;
     width: 80vw;
     margin-bottom: 10px;
-    border: 2px solid #2c494f;
-    border-radius: 50px;
+    border: 1px solid #b6d8df;
+    border-radius: .8em;
     background-color: #fcfcfc;
 }
 
@@ -43,14 +43,6 @@
 
 .accordion i {
     color: #2587be;
-}
-
-.accordion .close {
-    display: none;
-}
-
-.accordion input:checked + label .close {
-    display: block;
 }
 
 .accordion input:checked + label .open {
@@ -110,42 +102,7 @@ width: 7em;
     display: flex;
     color: #126ef8;
 }  
-  /* Shutter Out Horizontal */
-.hvr-shutter-out-horizontal {
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-  }
-  .hvr-shutter-out-horizontal:before {
-    content: "";
-    border-radius: 50px;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #c1e6ecda;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 50%;
-    transform-origin: 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
+ 
 
    /* diseño responsive  */
    @media only screen and (max-width: 930px){    
