@@ -6,8 +6,6 @@
 */
 
 .container {
-    width: 100%;
-    height: 100%;
     margin-inline: auto;
     padding: 10px 5px;
     display: -webkit-inline-box;
@@ -48,7 +46,6 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    height: 100%;
 }
 
 .title {
@@ -60,11 +57,9 @@
 }
 
 .accordion-panel {
-    padding: 0 4em;
     width: 70rem;
-    max-height: 100%;
     margin-bottom: 10px;
-    border: 1px solid #b6d8df;
+    border: 1px solid var(--border-color);
     border-radius: .8em;
     background-color: #fcfcfc;
 }
@@ -94,6 +89,7 @@
     transition: color 0.25s;
     font-size: 16px;
     font-weight: 600;
+    min-height: 45px;
 }
 
 .accordion label:hover,
@@ -103,6 +99,11 @@
 
 .accordion i {
     color: #2587be;
+}
+
+.open{
+    position: absolute;
+    right: 1em;
 }
 
 .accordion input:checked + label .open {
@@ -167,22 +168,12 @@ app-qr-color-form, app-qr-sizing-form, app-social, app-plataform, app-devs, app-
     margin: 0 auto;
 }
 
-.btn {
-    border-radius: 11px;
-    text-shadow: 0px 0px 2px #102e1c;
-    font-family: Georgia;
-    color: #fcfcfc;
-    font-size: 18px;
-    background: #b8bcd5;
-    padding: 10px 20px 10px 20px;
-    border: solid #89959c 1px;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    background: #c00c0c;
-    text-decoration: none;
-  }
+  /* animaciones acordion titulos - estilos generales  */
+.target{
+  min-width: 100%;
+  padding: 0 1.5em;
+}
+
 
 /* Icono color animación  */
 .contenedor{
@@ -205,30 +196,20 @@ app-qr-color-form, app-qr-sizing-form, app-social, app-plataform, app-devs, app-
 }
 .contenedor ul{
     position: relative;
+    left: -.4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    left: .6em;
-}
-#hover_target{
-  width:50vw;
-  border-radius: 0;
-  position: absolute;
-  left: -140px;
-  background: transparent;
 }
 .contenedor ul li{
     position: relative;
     list-style: none;
     height: 30px;
     width: 30px;
-    background: rgba(197, 189, 189, 0.733);
     border-radius: 50%;
 }
 .contenedor ul li span #brush{
     color:#126ef8;
-    font-size: 22px;
     position: relative;
     z-index: 500;
 }
@@ -237,8 +218,6 @@ app-qr-color-form, app-qr-sizing-form, app-social, app-plataform, app-devs, app-
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -253,14 +232,14 @@ app-qr-color-form, app-qr-sizing-form, app-social, app-plataform, app-devs, app-
     -o-transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) .4s;
     transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) .4s;
 }
-    .contenedor ul li:hover span:nth-child(7){
+    .target:hover .contenedor ul li span:nth-child(7){
         -webkit-transform: translateX(240px);
             -ms-transform: translateX(240px);
                 transform: translateX(240px);
         background-color: #ee82ee;
         opacity: .7;
     }
-    .contenedor ul li:hover span:nth-child(6){
+    .target:hover .contenedor ul li span:nth-child(6){
         content: "";
         -webkit-transform: translateX(200px);
             -ms-transform: translateX(200px);
@@ -268,28 +247,28 @@ app-qr-color-form, app-qr-sizing-form, app-social, app-plataform, app-devs, app-
         background-color: #0000ff;
         opacity: .7;
     }
-    .contenedor ul li:hover span:nth-child(5){
+    .target:hover .contenedor ul li span:nth-child(5){
         -webkit-transform: translateX(160px);
             -ms-transform: translateX(160px);
                 transform: translateX(160px);
         background-color: #4b0082;
         opacity: .8;
     }
-    .contenedor ul li:hover span:nth-child(4){
+    .target:hover .contenedor ul li span:nth-child(4){
         -webkit-transform: translateX(120px);
             -ms-transform: translateX(120px);
                 transform: translateX(120px);
         background-color: #008000;
         opacity: .8;
     }   
-    .contenedor ul li:hover span:nth-child(3){
+    .target:hover .contenedor ul li span:nth-child(3){
         -webkit-transform: translateX(80px);
             -ms-transform: translateX(80px);
                 transform: translateX(80px);
         background-color: #ffff00;
         opacity: .9;
     }   
-    .contenedor ul li:hover span:nth-child(2){
+    .target:hover .contenedor ul li span:nth-child(2){
         -webkit-transform: translateX(40px);
             -ms-transform: translateX(40px);
                 transform: translateX(40px);
@@ -297,7 +276,7 @@ app-qr-color-form, app-qr-sizing-form, app-social, app-plataform, app-devs, app-
         opacity: .9;
 
     }   
-    .contenedor ul li:hover span:nth-child(1){
+    .target:hover .contenedor ul li span:nth-child(1){
         -webkit-transform: translate(0, 0);
             -ms-transform: translate(0, 0);
                 transform: translate(0, 0);
@@ -308,13 +287,9 @@ app-qr-color-form, app-qr-sizing-form, app-social, app-plataform, app-devs, app-
 /* Icon Spin */
 #quote-left{
     margin-right: 1em;
-    font-size: 28px;
-    color: #126ef8;
 }
 #quote-right{
     margin-left: 1em;
-    font-size: 28px;
-    color: #126ef8;
 }
 .hvr-icon{
     color: var(--button-hover-bg-color);
@@ -324,7 +299,6 @@ app-qr-color-form, app-qr-sizing-form, app-social, app-plataform, app-devs, app-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50vw;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -359,11 +333,8 @@ display: flex;
 width: 7em;
 }
 
-#icons, #wrap-icon, #size-icon, #option-icon{
-    font-size: 28px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+#icons, #wrap-icon, #size-icon, #option-icon, #brush, #quote-left, #quote-right{
+    font-size: 22px;
     color: #126ef8;
 }
 
@@ -373,7 +344,6 @@ width: 7em;
     display: -ms-flexbox;
     display: flex;
     vertical-align: middle;
-    width: 50vw;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     -webkit-box-shadow: 0 0 1px #00000000;
@@ -399,9 +369,9 @@ width: 7em;
        transition-timing-function: ease-out;
   }
   .hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
-    -webkit-transform: translateX(400px);
-    -ms-transform: translateX(400px);
-        transform: translateX(400px);
+    -webkit-transform: translateX(450px);
+    -ms-transform: translateX(450px);
+        transform: translateX(450px);
   }
  
 
@@ -420,13 +390,17 @@ width: 7em;
     }
     
     .accordion-panel {
-        padding: 0 1.5rem;
         width: 50rem;
         margin-bottom: 5px;
     }
     span{
         font-size: 12px;
     }
+    .hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+        -webkit-transform: translateX(300px);
+        -ms-transform: translateX(300px);
+            transform: translateX(300px);
+      }
   }
 
    /* diseño responsive  */
@@ -434,9 +408,98 @@ width: 7em;
     .accordion-panel {
         width: 40rem;
     }
+    .hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+        -webkit-transform: translateX(200px);
+        -ms-transform: translateX(200px);
+            transform: translateX(200px);
+      }
+      .contenedor ul li{
+        height: 22px;
+        width: 22px;
+    }
+    #icons, #wrap-icon, #size-icon, #option-icon, #brush, #quote-left, #quote-right{
+        font-size: 18px;
+    }
+    .target:hover .contenedor ul li span:nth-child(7){
+        -webkit-transform: translateX(180px);
+            -ms-transform: translateX(180px);
+                transform: translateX(180px);
+    }
+    .target:hover .contenedor ul li span:nth-child(6){
+        content: "";
+        -webkit-transform: translateX(150px);
+            -ms-transform: translateX(150px);
+                transform: translateX(150px);
+    }
+    .target:hover .contenedor ul li span:nth-child(5){
+        -webkit-transform: translateX(120px);
+            -ms-transform: translateX(120px);
+                transform: translateX(120px);
+    }
+    .target:hover .contenedor ul li span:nth-child(4){
+        -webkit-transform: translateX(90px);
+            -ms-transform: translateX(90px);
+                transform: translateX(90px);
+    }   
+    .target:hover .contenedor ul li span:nth-child(3){
+        -webkit-transform: translateX(60px);
+            -ms-transform: translateX(60px);
+                transform: translateX(60px);
+    }   
+    .target:hover .contenedor ul li span:nth-child(2){
+        -webkit-transform: translateX(30px);
+            -ms-transform: translateX(30px);
+                transform: translateX(30px);
+    }
+    
+      
    }
    @media only screen and (max-width: 430px){      
     .accordion-panel {
         width: 32rem;
     }
+    .hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+        -webkit-transform: translateX(130px);
+        -ms-transform: translateX(130px);
+            transform: translateX(130px);
+      }
+    #icons, #wrap-icon, #size-icon, #option-icon, #brush, #quote-left, #quote-right{
+        font-size: 14px;
+    }
+    .contenedor ul li{
+        height: 18px;
+        width: 18px;
+    }
+    .target:hover .contenedor ul li span:nth-child(7){
+        -webkit-transform: translateX(120px);
+            -ms-transform: translateX(120px);
+                transform: translateX(120px);
+    }
+    .target:hover .contenedor ul li span:nth-child(6){
+        content: "";
+        -webkit-transform: translateX(100px);
+            -ms-transform: translateX(100px);
+                transform: translateX(100px);
+    }
+    .target:hover .contenedor ul li span:nth-child(5){
+        -webkit-transform: translateX(80px);
+            -ms-transform: translateX(80px);
+                transform: translateX(80px);
+    }
+    .target:hover .contenedor ul li span:nth-child(4){
+        -webkit-transform: translateX(60px);
+            -ms-transform: translateX(60px);
+                transform: translateX(60px);
+    }   
+    .target:hover .contenedor ul li span:nth-child(3){
+        -webkit-transform: translateX(40px);
+            -ms-transform: translateX(40px);
+                transform: translateX(40px);
+    }   
+    .target:hover .contenedor ul li span:nth-child(2){
+        -webkit-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+                transform: translateX(20px);
+    }
+    
 }

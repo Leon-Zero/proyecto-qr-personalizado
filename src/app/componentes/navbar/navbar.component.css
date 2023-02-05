@@ -12,7 +12,7 @@ nav{
   display: -ms-flexbox;
   display: flex;
   padding: 0 2em;
-  background: #bcebf3ec;
+  background: var(--secundary-bg-color);
   -webkit-box-shadow: inset 0 -5px 6px #33444bdc;
           box-shadow: inset 0 -5px 6px #33444bdc;
   position: relative;
@@ -61,20 +61,20 @@ display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
 -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+-ms-grid-row-align: center;
+align-self: center;
 background-color: #236fb6;
-color: #0f0f0f; 
+color: var(--text-color); 
 padding: .2em .25em;
 border-radius: .3em;
-border: #fcfafa 3px solid;
+border: var(--palet-dark) 3px solid;
 }
 #logo h4{
 font-size: 2.5em;
 font-family:"Roboto", sans-serif;
 font-weight: 900;
 text-transform: uppercase;
-color: #ffffff;
+color: var(--text-color);
 text-shadow: 0 2px 6px #032636e3;
 letter-spacing: .3em;
 }
@@ -126,7 +126,7 @@ button p {
   -webkit-transform: translateX(6px);
       -ms-transform: translateX(6px);
           transform: translateX(6px);
-  fill: #e8e8e8;
+  fill: var(--palet-white);
   -webkit-filter: drop-shadow(0 2px 2px rgba(10, 10, 10, 0.8));
           filter: drop-shadow(0 2px 2px rgba(10, 10, 10, 0.8));
 }
@@ -143,8 +143,8 @@ button p {
       -ms-transform: translateX(6px);
           transform: translateX(6px);
   fill: #f8f41ff6;
-  -webkit-filter: drop-shadow(0 2px 5px #fffd87da);
-          filter: drop-shadow(0 2px 5px #fffd87da);
+  -webkit-filter: drop-shadow(0 2px 4px #fffd87da);
+          filter: drop-shadow(0 2px 4px #fffd87da);
 }
 #btn-page-4:hover svg {
   -webkit-transform: translateX(6px);
@@ -155,7 +155,7 @@ button p {
           filter: drop-shadow(0 2px 1px rgba(10, 10, 10, 0.87));
 }
 button:hover p{
-  color: rgb(243, 246, 247);
+  color: var(--palet-white);
   text-shadow: 1px 1px 2px #000000ec;
 }
 
@@ -216,7 +216,7 @@ button svg {
      transition-timing-function: ease-out;
 }
 .hvr-bounce-to-top:hover, .hvr-bounce-to-top:focus, .hvr-bounce-to-top:active {
-  color: white;
+  color: var(--palet-white);
 }
 .hvr-bounce-to-top:hover:before, .hvr-bounce-to-top:focus:before, .hvr-bounce-to-top:active:before {
   -webkit-transform: scaleY(1);
@@ -277,7 +277,6 @@ button svg {
     -webkit-transform: translateX(3px);
         -ms-transform: translateX(3px);
             transform: translateX(3px);
-    fill: #f8f41ff6;
   }
   #btn-page-4:hover svg {
     -webkit-transform: translateX(3px);

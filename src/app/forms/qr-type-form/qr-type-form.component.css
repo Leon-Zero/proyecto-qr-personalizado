@@ -6,9 +6,9 @@
     align-items: flex-end;
     overflow: hidden;
     margin-bottom: 1em;
-    background: #a2bcbd;
+    background: var(--primary-bg-color);
     border-radius: .8em;
-    border: 1px solid #818181;
+    border: 1px solid var(--border-color);
     margin: 1em 0;
 }
 nav{

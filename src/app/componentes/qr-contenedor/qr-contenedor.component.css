@@ -93,9 +93,9 @@ transition: all .2s;
 border: none;
 font-family: "Roboto", sans-serif;
 font-weight: 600;
-text-shadow: 1px 1px 2px #5894ee;
+text-shadow: 1px 1px 2px #4880d4;
 color: #000000;
-background-color: #74a6f1b0;
+background-color: var(--primary-bg-color);
 }
    
    .btn:hover {
@@ -150,12 +150,11 @@ display: flex;
 -webkit-box-align: center;
     -ms-flex-align: center;
         align-items: center;
-background: red;
 border: none;
 border-radius: 5px;
 -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
         box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
-background: #e62222;
+background: var(--btn-warning-color);
 font-size: 17px;
 text-transform: uppercase;
 text-decoration: none;
@@ -195,7 +194,7 @@ fill: #eee;
 }
 
     .btn-clean:hover {
-    background: #ff3636;
+    background: var(--btn-warning-hvr);
     }
 
     .btn-clean:hover .text {
