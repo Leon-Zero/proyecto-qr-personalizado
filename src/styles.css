@@ -24,7 +24,7 @@ background-color: #e8e8e8;
 
 :root {  
     --primary-bg-color: #74a6f1b0;
-    --secundary-bg-color: #b1edf8;
+    --secundary-bg-color: #9ee9f7;
     --primary-color: #2a3780;
     --text-color: #29292c;
     --text-active: #1f3ac7;
@@ -218,6 +218,28 @@ button {
 }
 
 
+/* estilo input formularios generales */
+
+.input-form{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  padding: .2em;
+  margin: 10px;
+  font-weight: 600;
+  color: var(--palet-dark); 
+  background-color: var(--palet-white);
+  border: 3px solid var(--primary-bg-color);
+  border-radius: 8px;
+  }
+  .input-form:focus{
+    background-color: var(--secundary-bg-color);
+    border: 3px solid var(--button-hover-bg-color);
+    filter: drop-shadow(3px 3px 3px var(--primary-color));
+  }
+
+/* ********* */
+
+
 
    /* Shutter Out Horizontal */
 .hvr-shutter-out-horizontal {
@@ -267,11 +289,6 @@ button {
   -ms-transform: scaleX(1);
       transform: scaleX(1);
 }
-
-  /* diseño responsive  */
-  @media only screen and (max-width: 930px){
-   
-  }
 
 
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

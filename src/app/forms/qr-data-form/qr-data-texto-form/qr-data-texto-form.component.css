@@ -3,8 +3,6 @@ display: inline-block;
 margin: 2em 0;
 }
 form{
-    width: 50%;
-    height: 50%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -12,20 +10,7 @@ form{
     gap: 10px;
 }
 #input-texto{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-width: 500px;
-font-size: 14px;
-padding: .2em;
-color: #000000;
-background-color: #f6f7f769;
-filter: drop-shadow(3px 3px 3px #7b86d3);
-margin: 10px;
-font-weight: 600;
-border: 3px solid #9f9fea;
-}
-#input-texto:focus{
-background-color: #fdfdff;
-border: 3px #3131bc solid;
+    width: 500px;
 }
 
 label{
@@ -45,29 +30,21 @@ margin: 0 auto;
 /* diseño responsive  */
 @media only screen and (max-width: 930px){
     form{
-        width: 100%;
-        height: 100%;
         gap: 5px;
     }
     #input-texto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 300px;
     font-size: 12px;
     padding: .2em;
-    filter: drop-shadow(2px 2px 2px #7b86d3);
     margin: 5px;
-    border: 2px solid #9f9fea;
     }
-    #input-texto:focus{
-    border: 2px #3131bc solid;
-    }
+    
     label{
     font-size: 12px;
     }   
 }
 @media only screen and (max-width: 430px){
     #input-texto{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         width: 250px;
     }
 }

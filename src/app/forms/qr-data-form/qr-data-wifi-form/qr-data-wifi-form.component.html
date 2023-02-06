@@ -2,14 +2,14 @@
     <form (ngSubmit)="sendWifi()">
         <div class="container">
             <label for="input-ssid">SSID/ Nombre de red <small>(*)</small></label>
-            <input class="input-wifi" id="input-ssid" type="text" name="ssid" 
+            <input class="input-wifi input-form" id="input-ssid" type="text" name="ssid" 
             [(ngModel)]="ssid" (input)="ssidValue(ssid)" required>
         </div>
 
         <div class="container">
             <label for="encryption">Cifrado <small>(*)</small></label>
             <div class="input-group">
-                <select [(ngModel)]="typeEncryption" name="encryption" id="encryption" class="input-wifi"
+                <select [(ngModel)]="typeEncryption" name="encryption" id="encryption" class="input-wifi input-form"
                 (change)="typeEncryptionValue(typeEncryption)"  required>
                     <option value="WPA">WPA/WPA2/WPA3</option>
                     <option value="WEP">WEP</option>
@@ -21,7 +21,7 @@
         <div class="container">
             <label for="password"><span class="fa-solid fa-key"></span>Contraseña <small>(*)</small></label>
             <div class="input-group">
-                <input class="input-wifi" [type]="passVisible? 'text' : 'password' " id="password" name="password"
+                <input class="input-wifi input-form" [type]="passVisible? 'text' : 'password' " id="password" name="password"
                 [(ngModel)]="password" (input)="passwordValue(password)" required>
                 <span><button type="button" id="pass-hidden" (click)="changeVisibility()" >
                     <i [class]="passVisible? 'fa-regular fa-eye-slash' : 'fa-regular fa-eye' "></i>

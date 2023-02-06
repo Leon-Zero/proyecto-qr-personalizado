@@ -2,12 +2,12 @@
     <form (ngSubmit)="sendUbication()" >
         <div class="container">
             <label for="input-latitud">Latitud <small>(*)</small></label>
-            <input class="input-mapa" id="input-latitud" type="number" name="latitud" 
+            <input class="input-mapa input-form" id="input-latitud" type="number" name="latitud" 
             [(ngModel)]="latitud" (input)="latitudValue(latitud)" placeholder="1234/-1234">
         </div>
         <div class="container">
             <label for="input-longitud">Longitud <small>(*)</small></label>
-            <input class="input-mapa" id="input-longitud" type="number" name="longitud"
+            <input class="input-mapa input-form" id="input-longitud" type="number" name="longitud"
              [(ngModel)]="longitud" (input)="longitudValue(longitud)" placeholder="-1234/1234">
         </div>
         <div class="container">
