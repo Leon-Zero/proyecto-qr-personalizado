@@ -1,24 +1,43 @@
 <div class="wrap">
-    <form ngNoForm class="hvr-shutter-out-horizontal" id="form-contacto" [action]="'https://formsubmit.co/' + mail" method="POST" role="form" name="form"> 
+    <form class="hvr-shutter-out-horizontal" id="form-contacto"
+    [formGroup]="addFormsubmit"
+    (ngSubmit)="sendForm()" > 
         <h4>Formulario de Contacto</h4>
+
             <div class="column">
                 <label for="FormControlInput1">Nombre y Apellido</label>
-                <input class="input-form" type="text" id="FormControlInput1" placeholder="Leonardo Ismael Hidalgo..." name="nombre" required>
+                <input class="input-form" type="text" id="FormControlInput1"
+                formControlName="nombre" 
+                placeholder="Leonardo Ismael Hidalgo..." 
+                name="nombre" required>
             </div>
+            <div *ngIf="addFormsubmit.touched && addFormsubmit.controls.nombre.errors">Nombre es requerido</div>
+
             <div class="column">
                 <label for="FormControlInput2">Dirección Email</label>
-                <input class="input-form" type="email" id="FormControlInput2" placeholder="name@ejemplo.com" name="email" required>
+                <input class="input-form" type="email" id="FormControlInput2" 
+                formControlName="email"
+                placeholder="name@ejemplo.com" 
+                name="email" required>
             </div>
+            <div *ngIf="addFormsubmit.touched && addFormsubmit.controls.email.errors">Email es requerido</div>
+
             <div class="column">
                 <label for="FormControlTextarea1">Escriba el asunto de contacto</label>
-                <textarea class="input-form" id="FormControlTextarea1" rows="6" name="mensaje" required></textarea>
-            </div> 
+                <textarea class="input-form" id="FormControlTextarea1"
+                formControlName="asunto" 
+                rows="6" 
+                name="mensaje" required></textarea>
+            </div>
 
-            <input type="hidden" name="_subject" [value]="asunto">
-                <input type="hidden" name="_autoresponse" [value]="autoResponse">
-                <input type="hidden" name="_next" [value]="return">
-            <input type="hidden" name="_template" value="box">
+            <div *ngIf="addFormsubmit.touched && addFormsubmit.controls.asunto.errors">Asunto es requerido</div>
 
-        <button class="btn" type="submit">Enviar</button>
+            <!-- configuraciones de formsubmit -->
+            <input type="hidden" name="_subject"
+              formControlName="_subject">
+            <input type="hidden" name="_template"
+             formControlName="_template">
+
+        <button [disabled]="addFormsubmit.invalid" class="btn" type="submit">Enviar</button>
     </form> 
 </div>

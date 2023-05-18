@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { ContactoService } from 'src/app/servicios/contacto.service';
 
 @Component({
   selector: 'app-contacto',
@@ -7,14 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private contactoService: ContactoService ) { }
 
-  mail: string = "leon.cba09@gmail.com";
-  asunto: string = " Genex QR - Proyecto QR personalizado";
-  autoResponse: string= "Muchas gracias por escribir, su consulta será analizada y me estaré comunicando a la brevedad. Atte.: Leonardo Ismael Hidalgo. Developer full stack training.";
-  return: string= "https://genex-qr.web.app";
+  asunto: string = "Genex QR - Proyecto QR personalizado";
+
+  addFormsubmit = new FormGroup ({
+    nombre: new FormControl(''),
+    email: new FormControl(''),
+    asunto: new FormControl(''),
+    _subject: new FormControl(this.asunto),
+    _template: new FormControl('box')
+  });
 
   ngOnInit(): void {
+  }
+
+  sendForm(){
+    this.contactoService.sendMail(this.addFormsubmit.value);
   }
 
 }

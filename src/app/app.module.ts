@@ -3,7 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 import { CargarScriptService } from "src/app/servicios/cargar-script.service";
 import { QrValuesService } from "src/app/servicios/qr-values.service";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -70,7 +72,9 @@ import { FooterComponent } from './componentes/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     NgxQRCodeModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     CargarScriptService,
